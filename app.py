@@ -1,50 +1,23 @@
-import os
-from dash import Dash, html, dcc, Input, Output, State  # Correctly import State here
-from openai import OpenAI
+from langchain import OpenAI, PromptTemplate, LLMChain
 
-# Initialize the Dash application
-app = Dash(__name__)
+# Initialize OpenAI with your API key
+openai = OpenAI(api_key='your-openai-api-key')
 
-# Layout of the application
-app.layout = html.Div([
-    html.H1("Interact with GPT"),
-    dcc.Textarea(
-        id='user-input',
-        style={'width': '100%', 'height': 100},
-        placeholder="Type your question here..."
-    ),
-    html.Button('Submit', id='submit-button', n_clicks=0),
-    html.Div(id='gpt-response', style={'white-space': 'pre-line'})
-])
-
-# Function to query GPT
-def ask_gpt(question):
-    client = OpenAI()
-    
-    try:
-        completion = client.chat.completions.create(
-            model = "gpt-3.5-turbo",
-            messages = [{"role": "system", "content": "You are a helpful assistant."},
-                        {"role": "user", "content": question}]
-        )
-
-        return completion.choices[0].message.content.strip()
-    except Exception as e:
-        return f"An error occurred: {e}"
-
-
-# Callback to handle the button click
-@app.callback(
-    Output('gpt-response', 'children'),  # Specifies where to output data
-    [Input('submit-button', 'n_clicks')],  # Specifies the input that triggers the callback
-    [State('user-input', 'value')]  # The state, additional data for the callback
+# Define a prompt template
+prompt_template = PromptTemplate(
+    input_variables=["input_text"],
+    template="Convert the following input into a conceptual and logical data model:\n{input_text}"
 )
-def update_output(n_clicks, value):
-    if n_clicks > 0:
-        return ask_gpt(value)
-    else:
-        return "Your GPT response will appear here."
 
-# Main function to run the server
-if __name__ == '__main__':
-    app.run_server(debug=True)
+# Create an LLMChain instance
+llm_chain = LLMChain(llm=openai, prompt_template=prompt_template)
+
+# Function to get a structured response
+def get_structured_response(input_text):
+    response = llm_chain.run(input_text)
+    return response
+
+# Example usage
+input_text = "Describe the core values of Diamond Jack."
+structured_response = get_structured_response(input_text)
+print(structured_response)
