@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "node": "^20.14.0"
+  },
+  "name": "diamond_jack",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thelogos11/diamond_jack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thelogos11/diamond_jack/issues"
+  },
+  "homepage": "https://github.com/thelogos11/diamond_jack#readme"
+}
