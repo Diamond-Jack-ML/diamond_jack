@@ -1,7 +1,8 @@
 from langchain import OpenAI, PromptTemplate, LLMChain
 
 # Initialize OpenAI with your API key
-openai = OpenAI(api_key='your-openai-api-key')
+openai = OpenAI(api_key='sk-proj-gyFZUevwbMlQwtaOaaGmT3BlbkFJ2ghHZJgW6VqV6Jz29jCe
+')
 
 # Define a prompt template
 prompt_template = PromptTemplate(

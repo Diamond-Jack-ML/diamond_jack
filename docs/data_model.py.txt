@@ -1,0 +1,20 @@
+class ConceptualDataModel:
+    def __init__(self, name, description):
+        self.name = name
+        self.description = description
+        self.components = []
+
+    def add_component(self, component):
+        self.components.append(component)
+
+class Component:
+    def __init__(self, name, description, systems):
+        self.name = name
+        self.description = description
+        self.systems = systems
+
+class System:
+    def __init__(self, name, os, version):
+        self.name = name
+        self.os = os
+        self.version = version
