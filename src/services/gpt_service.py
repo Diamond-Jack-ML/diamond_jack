@@ -1,5 +1,5 @@
-import os
 import openai
+import os
 
 class GPTService:
     def __init__(self):

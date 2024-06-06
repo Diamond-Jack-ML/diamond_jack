@@ -1,9 +1,24 @@
-from flask import Flask
+from flask import Flask, request, jsonify
+from services.gpt_service import GPTService
+
 app = Flask(__name__)
+
+# Initialize GPTService
+gpt_service = GPTService()
 
 @app.route('/')
 def home():
     return "Welcome to Diamond Jack!"
+
+@app.route('/api/ask', methods=['POST'])
+def ask_gpt():
+    data = request.json
+    input_text = data.get('input_text')
+    if not input_text:
+        return jsonify({"error": "No input_text provided"}), 400
+    
+    response = gpt_service.get_structured_response(input_text)
+    return jsonify({"response": response})
 
 if __name__ == '__main__':
     app.run(debug=True)
