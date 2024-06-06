@@ -4,15 +4,18 @@ import os
 class GPTService:
     def __init__(self):
         self.api_key = os.getenv('OPENAI_API_KEY')
+        print(f"Using OpenAI API Key: {self.api_key}")  # Debugging line
         openai.api_key = self.api_key
 
     def get_structured_response(self, input_text):
-        response = openai.Completion.create(
-            model="text-davinci-003",
-            prompt=f"Convert the following input into a conceptual and logical data model:\n{input_text}",
-            max_tokens=150
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": f"Convert the following input into a conceptual and logical data model:\n{input_text}"}
+            ]
         )
-        return response.choices[0].text.strip()
+        return response['choices'][0]['message']['content'].strip()
 
 # Usage
 if __name__ == "__main__":
