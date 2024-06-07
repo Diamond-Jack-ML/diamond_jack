@@ -1,0 +1,32 @@
++-------------------+     +--------+     +---------------------+
+| Repository        | 1   | Commit | *   | Execution Context   |
+|-------------------|-----|--------|-----|---------------------|
+| Name              |     | ID     |     | OS History          |
+| URL               |     | Time   |     | Active Sessions     |
+| Current Commit    |     | Author |     | Logs                |
+| Branches          |     | Msg    |     | Shell Commands      |
++-------------------+     +--------+     +---------------------+
+
++--------------+     +--------+     +------------------+
+| Shell Session| 1   | Commit | *   | Educational Content |
+|--------------|-----|--------|-----|------------------|
+| Command      |     | ID     |     | Topic            |
+| Output       |     |        |     | Content          |
+| Time         |     |        |     | Linked Code      |
++--------------+     +--------+     +------------------+
+
++-------------+
+| Requirements|
+|-------------|
+| Package Name|
+| Version     |
+| Timestamp   |
++-------------+
+
++------------+     +--------+
+| AI Interact| 1   | Shell  |
+|------------|-----| Session|
+| Prompt     |     | ID     |
+| Response   |     +--------+
+| Timestamp  |
++------------+
