@@ -6,15 +6,19 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch('http://127.0.0.1:5000/ask', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ input_text: inputText })
-    });
-    const data = await res.json();
-    setResponse(data.response);
+    try {
+      const res = await fetch('http://127.0.0.1:5000/ask', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ input_text: inputText })
+      });
+      const data = await res.json();
+      setResponse(data.response);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   };
 
   return (

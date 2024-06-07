@@ -1,29 +1,15 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 from services.gpt_service import GPTService
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 # Initialize GPTService
 gpt_service = GPTService()
 
-@app.route('/')
-def home():
-    return "Welcome to Diamond Jack!"
-
-@app.route('/ask', methods=['GET', 'POST'])
+@app.route('/ask', methods=['POST'])
 def ask():
-    if request.method == 'POST':
-        input_text = request.form.get('input_text')
-        if not input_text:
-            return jsonify({"error": "No input_text provided"}), 400
-        
-        response = gpt_service.get_structured_response(input_text)
-        return render_template('response.html', input_text=input_text, response=response)
-    
-    return render_template('ask.html')
-
-@app.route('/api/ask', methods=['POST'])
-def api_ask():
     data = request.json
     input_text = data.get('input_text')
     if not input_text:
