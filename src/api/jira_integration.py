@@ -7,6 +7,7 @@ import base64
 JIRA_BASE_URL = "https://agency-audia.atlassian.net"
 JIRA_API_TOKEN = os.getenv("JIRA_API_TOKEN")
 JIRA_USER_EMAIL = os.getenv("JIRA_USER_EMAIL")
+JIRA_LEAD_ID = os.getenv("JIRA_LEAD_ID")
 
 def get_headers():
     auth = f"{JIRA_USER_EMAIL}:{JIRA_API_TOKEN}"
@@ -27,7 +28,7 @@ def create_project(project_name, project_key, project_type="software"):
         "key": project_key,
         "name": project_name,
         "projectTypeKey": project_type,
-        "leadAccountId": "your-account-id"  # Update with your actual lead account ID
+        "leadAccountId": JIRA_LEAD_ID  # Update with your actual lead account ID
     }
 
     response = requests.post(url, headers=get_headers(), data=json.dumps(payload))
