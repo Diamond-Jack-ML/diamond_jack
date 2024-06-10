@@ -43,7 +43,7 @@ Issue Type: Task, Summary: Frontend Development, Status: To Do, Assignee: Unassi
 Issue Type: Task, Summary: Backend Development, Status: To Do, Assignee: Unassigned
 Issue Type: Task, Summary: Database Architecture, Status: To Do, Assignee: Unassigned
 Issue Type: Task, Summary: System Design and Planning, Status: To Do, Assignee: Unassigned
-Issue Type: Task, Summary: Requirement Gathering and Analysis, Status: To Do, Assignee: Unassigned
+Issue Type: Task, Summary: Requirement Gathering and Analysis, Status: In Progress, Assignee: Unassigned
 Issue Type: Epic, Summary: Business System Architecture, Status: To Do, Assignee: Alan Audia
 Issue Type: Epic, Summary: Main System, Status: To Do, Assignee: Unassigned
 Issue Type: Subtask, Summary: Refine operations processes, Status: To Do, Assignee: Unassigned
