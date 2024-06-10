@@ -141,3 +141,28 @@ Mode                 LastWriteTime         Length Name
 PS C:\dev\diamond_jack>
 (test_env) notepad logs/full_shell_logs.txt
 PS C:\dev\diamond_jack>
+(test_env) powershell.exe -File capture_logs.ps1
+
+PS C:\dev\diamond_jack>
+(test_env) cd logs
+PS C:\dev\diamond_jack\logs>
+(test_env) ls
+
+
+    Directory: C:\dev\diamond_jack\logs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         6/10/2024   4:19 PM           6050 full_shell_logs.txt
+-a----         6/10/2024   4:01 PM          32056 shell_logs.txt
+-a----         6/10/2024   4:20 PM          15344 system_logs.txt
+
+
+PS C:\dev\diamond_jack\logs>
+(test_env) notepad shell_logs.txt
+PS C:\dev\diamond_jack\logs>
+(test_env) rm shell_logs.txt
+PS C:\dev\diamond_jack\logs>
+(test_env) notepad full_shell_logs.txt
+PS C:\dev\diamond_jack\logs>
