@@ -1,0 +1,126 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240610161729
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 5648
+PSVersion: 5.1.22621.2506
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.2506
+BuildVersion: 10.0.22621.2506
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\dev\diamond_jack\logs\full_shell_logs.txt
+PS C:\dev> cd diamond_jack
+PS C:\dev\diamond_jack> ./test_env/Scripts/activate
+PS C:\dev\diamond_jack>
+(test_env) ls
+
+
+    Directory: C:\dev\diamond_jack
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          6/8/2024   7:25 PM                docs
+d-----          6/8/2024   7:25 PM                frontend
+d-----         6/10/2024   4:17 PM                logs
+d-----          6/9/2024   5:20 PM                new_env
+d-----          6/4/2024  11:46 PM                node_modules
+d-----          6/8/2024   7:25 PM                scripts
+d-----          6/8/2024   7:25 PM                src
+d-----          6/8/2024   7:23 PM                tests
+d-----          6/8/2024   7:36 PM                test_env
+-a----          6/9/2024   5:20 PM           3272 .gitignore
+-a----          6/4/2024  11:46 PM              8 .python-version
+-a----          6/5/2024   3:10 PM             67 apis.txt
+-a----         6/10/2024   4:05 PM           1216 capture_logs.ps1
+-a----          6/5/2024  12:02 AM            362 db_connect.py
+-a----          6/8/2024   7:23 PM            432 jira_config.js
+-a----          6/5/2024  12:02 AM            522 jira_example.py
+-a----          6/4/2024  11:46 PM          26951 package-lock.json
+-a----          6/4/2024  11:46 PM            622 package.json
+-a----          6/4/2024   4:03 PM             13 README.md
+-a----          6/9/2024   5:20 PM             47 requirements.txt
+
+
+PS C:\dev\diamond_jack>
+(test_env) ls
+
+
+    Directory: C:\dev\diamond_jack
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          6/8/2024   7:25 PM                docs
+d-----          6/8/2024   7:25 PM                frontend
+d-----         6/10/2024   4:17 PM                logs
+d-----          6/9/2024   5:20 PM                new_env
+d-----          6/4/2024  11:46 PM                node_modules
+d-----          6/8/2024   7:25 PM                scripts
+d-----          6/8/2024   7:25 PM                src
+d-----          6/8/2024   7:23 PM                tests
+d-----          6/8/2024   7:36 PM                test_env
+-a----          6/9/2024   5:20 PM           3272 .gitignore
+-a----          6/4/2024  11:46 PM              8 .python-version
+-a----          6/5/2024   3:10 PM             67 apis.txt
+-a----         6/10/2024   4:05 PM           1216 capture_logs.ps1
+-a----          6/5/2024  12:02 AM            362 db_connect.py
+-a----          6/8/2024   7:23 PM            432 jira_config.js
+-a----          6/5/2024  12:02 AM            522 jira_example.py
+-a----          6/4/2024  11:46 PM          26951 package-lock.json
+-a----          6/4/2024  11:46 PM            622 package.json
+-a----          6/4/2024   4:03 PM             13 README.md
+-a----          6/9/2024   5:20 PM             47 requirements.txt
+
+
+PS C:\dev\diamond_jack>
+(test_env) ls -a
+>> TerminatingError(Get-ChildItem): "Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: -Attributes -Directory -File -Hidden -ReadOnly -System."
+Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: 
+-Attributes -Directory -File -Hidden -ReadOnly -System.
+At line:1 char:4
++ ls -a
++    ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : AmbiguousParameter,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Parameter cannot be processed because the parameter
+name 'a' is ambiguous. Possible matches include: -Attributes
+-Directory -File -Hidden -ReadOnly -System.
+At line:1 char:4
++ ls -a
++    ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], Pa
+   rameterBindingException
+    + FullyQualifiedErrorId : AmbiguousParameter,Microsoft.PowerShell.
+   Commands.GetChildItemCommand
+
+PS C:\dev\diamond_jack>
+(test_env) ls -t
+>> TerminatingError(Get-ChildItem): "A parameter cannot be found that matches parameter name 't'."
+Get-ChildItem : A parameter cannot be found that matches parameter name 't'.
+At line:1 char:4
++ ls -t
++    ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : A parameter cannot be found that matches parameter
+name 't'.
+At line:1 char:4
++ ls -t
++    ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], Pa
+   rameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerSh
+   ell.Commands.GetChildItemCommand
+
+PS C:\dev\diamond_jack>
+(test_env) notepad capture_logs.ps1
+PS C:\dev\diamond_jack>
