@@ -1,12 +1,12 @@
 ﻿**********************
 Windows PowerShell transcript start
-Start time: 20240610161729
+Start time: 20240610193416
 Username: LAPTOP-KI0CU6PN\thelo
 RunAs User: LAPTOP-KI0CU6PN\thelo
 Configuration Name: 
 Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
 Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-Process ID: 5648
+Process ID: 12896
 PSVersion: 5.1.22621.2506
 PSEdition: Desktop
 PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.2506
@@ -20,114 +20,7 @@ Transcript started, output file is C:\dev\diamond_jack\logs\full_shell_logs.txt
 PS C:\dev> cd diamond_jack
 PS C:\dev\diamond_jack> ./test_env/Scripts/activate
 PS C:\dev\diamond_jack>
-(test_env) ls
-
-
-    Directory: C:\dev\diamond_jack
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----          6/8/2024   7:25 PM                docs
-d-----          6/8/2024   7:25 PM                frontend
-d-----         6/10/2024   4:17 PM                logs
-d-----          6/9/2024   5:20 PM                new_env
-d-----          6/4/2024  11:46 PM                node_modules
-d-----          6/8/2024   7:25 PM                scripts
-d-----          6/8/2024   7:25 PM                src
-d-----          6/8/2024   7:23 PM                tests
-d-----          6/8/2024   7:36 PM                test_env
--a----          6/9/2024   5:20 PM           3272 .gitignore
--a----          6/4/2024  11:46 PM              8 .python-version
--a----          6/5/2024   3:10 PM             67 apis.txt
--a----         6/10/2024   4:05 PM           1216 capture_logs.ps1
--a----          6/5/2024  12:02 AM            362 db_connect.py
--a----          6/8/2024   7:23 PM            432 jira_config.js
--a----          6/5/2024  12:02 AM            522 jira_example.py
--a----          6/4/2024  11:46 PM          26951 package-lock.json
--a----          6/4/2024  11:46 PM            622 package.json
--a----          6/4/2024   4:03 PM             13 README.md
--a----          6/9/2024   5:20 PM             47 requirements.txt
-
-
-PS C:\dev\diamond_jack>
-(test_env) ls
-
-
-    Directory: C:\dev\diamond_jack
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----          6/8/2024   7:25 PM                docs
-d-----          6/8/2024   7:25 PM                frontend
-d-----         6/10/2024   4:17 PM                logs
-d-----          6/9/2024   5:20 PM                new_env
-d-----          6/4/2024  11:46 PM                node_modules
-d-----          6/8/2024   7:25 PM                scripts
-d-----          6/8/2024   7:25 PM                src
-d-----          6/8/2024   7:23 PM                tests
-d-----          6/8/2024   7:36 PM                test_env
--a----          6/9/2024   5:20 PM           3272 .gitignore
--a----          6/4/2024  11:46 PM              8 .python-version
--a----          6/5/2024   3:10 PM             67 apis.txt
--a----         6/10/2024   4:05 PM           1216 capture_logs.ps1
--a----          6/5/2024  12:02 AM            362 db_connect.py
--a----          6/8/2024   7:23 PM            432 jira_config.js
--a----          6/5/2024  12:02 AM            522 jira_example.py
--a----          6/4/2024  11:46 PM          26951 package-lock.json
--a----          6/4/2024  11:46 PM            622 package.json
--a----          6/4/2024   4:03 PM             13 README.md
--a----          6/9/2024   5:20 PM             47 requirements.txt
-
-
-PS C:\dev\diamond_jack>
-(test_env) ls -a
->> TerminatingError(Get-ChildItem): "Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: -Attributes -Directory -File -Hidden -ReadOnly -System."
-Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: 
--Attributes -Directory -File -Hidden -ReadOnly -System.
-At line:1 char:4
-+ ls -a
-+    ~~
-    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
-    + FullyQualifiedErrorId : AmbiguousParameter,Microsoft.PowerShell.Commands.GetChildItemCommand
-Get-ChildItem : Parameter cannot be processed because the parameter
-name 'a' is ambiguous. Possible matches include: -Attributes
--Directory -File -Hidden -ReadOnly -System.
-At line:1 char:4
-+ ls -a
-+    ~~
-    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], Pa
-   rameterBindingException
-    + FullyQualifiedErrorId : AmbiguousParameter,Microsoft.PowerShell.
-   Commands.GetChildItemCommand
-
-PS C:\dev\diamond_jack>
-(test_env) ls -t
->> TerminatingError(Get-ChildItem): "A parameter cannot be found that matches parameter name 't'."
-Get-ChildItem : A parameter cannot be found that matches parameter name 't'.
-At line:1 char:4
-+ ls -t
-+    ~~
-    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
-    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
-Get-ChildItem : A parameter cannot be found that matches parameter
-name 't'.
-At line:1 char:4
-+ ls -t
-+    ~~
-    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], Pa
-   rameterBindingException
-    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerSh
-   ell.Commands.GetChildItemCommand
-
-PS C:\dev\diamond_jack>
-(test_env) notepad capture_logs.ps1
-PS C:\dev\diamond_jack>
-(test_env) powershell.exe -File capture_logs.ps1
-
-PS C:\dev\diamond_jack>
-(test_env) ls logs/full_shell_logs.txt
+(test_env) ls logs
 
 
     Directory: C:\dev\diamond_jack\logs
@@ -135,34 +28,496 @@ PS C:\dev\diamond_jack>
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
--a----         6/10/2024   4:19 PM           5679 full_shell_logs.txt
+-a----         6/10/2024   7:34 PM            621 full_shell_logs.txt
 
 
+PS C:\dev\diamond_jack>
+(test_env) notepad full_shell_logs.txt
 PS C:\dev\diamond_jack>
 (test_env) notepad logs/full_shell_logs.txt
 PS C:\dev\diamond_jack>
-(test_env) powershell.exe -File capture_logs.ps1
-
+(test_env) notepad $PROFILE
 PS C:\dev\diamond_jack>
-(test_env) cd logs
-PS C:\dev\diamond_jack\logs>
+(test_env) mv capture_logs.ps1 scripts
+PS C:\dev\diamond_jack>
 (test_env) ls
 
 
-    Directory: C:\dev\diamond_jack\logs
+    Directory: C:\dev\diamond_jack
 
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
--a----         6/10/2024   4:19 PM           6050 full_shell_logs.txt
--a----         6/10/2024   4:01 PM          32056 shell_logs.txt
--a----         6/10/2024   4:20 PM          15344 system_logs.txt
+d-----          6/8/2024   7:25 PM                docs
+d-----          6/8/2024   7:25 PM                frontend
+d-----         6/10/2024   7:34 PM                logs
+d-----          6/9/2024   5:20 PM                new_env
+d-----          6/4/2024  11:46 PM                node_modules
+d-----         6/10/2024   7:40 PM                scripts
+d-----          6/8/2024   7:25 PM                src
+d-----          6/8/2024   7:23 PM                tests
+d-----          6/8/2024   7:36 PM                test_env
+-a----          6/9/2024   5:20 PM           3272 .gitignore
+-a----          6/4/2024  11:46 PM              8 .python-version
+-a----          6/5/2024   3:10 PM             67 apis.txt
+-a----          6/5/2024  12:02 AM            362 db_connect.py
+-a----          6/8/2024   7:23 PM            432 jira_config.js
+-a----          6/5/2024  12:02 AM            522 jira_example.py
+-a----          6/4/2024  11:46 PM          26951 package-lock.json
+-a----          6/4/2024  11:46 PM            622 package.json
+-a----          6/4/2024   4:03 PM             13 README.md
+-a----          6/9/2024   5:20 PM             47 requirements.txt
 
 
-PS C:\dev\diamond_jack\logs>
-(test_env) notepad shell_logs.txt
-PS C:\dev\diamond_jack\logs>
-(test_env) rm shell_logs.txt
-PS C:\dev\diamond_jack\logs>
-(test_env) notepad full_shell_logs.txt
-PS C:\dev\diamond_jack\logs>
+PS C:\dev\diamond_jack>
+(test_env) ls scripts
+
+
+    Directory: C:\dev\diamond_jack\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          6/8/2024   7:25 PM            801 capture_execution_con
+                                                  text.py
+-a----         6/10/2024   7:32 PM           1642 capture_logs.ps1
+-a----          6/8/2024   2:25 PM           1765 file_structure.json
+-a----          6/8/2024   2:50 PM           1332 generate_requirements
+                                                  .py
+-a----          6/8/2024   7:25 PM           1411 get_file_structure.py
+-a----          6/8/2024   7:25 PM           2600 initialize_system.py
+-a----          6/8/2024   7:25 PM            518 integrate_gpt.py
+-a----          6/8/2024   2:27 PM            103 project_requirements.
+                                                  json
+-a----          6/8/2024   2:51 PM            173 requirements.txt
+
+
+PS C:\dev\diamond_jack>
+(test_env) cd scripts
+PS C:\dev\diamond_jack\scripts>
+(test_env) rm file_structure.json
+PS C:\dev\diamond_jack\scripts>
+(test_env) rm project_requirements.json
+PS C:\dev\diamond_jack\scripts>
+(test_env) ls
+
+
+    Directory: C:\dev\diamond_jack\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          6/8/2024   7:25 PM            801 capture_execution_con
+                                                  text.py
+-a----         6/10/2024   7:32 PM           1642 capture_logs.ps1
+-a----          6/8/2024   2:50 PM           1332 generate_requirements
+                                                  .py
+-a----          6/8/2024   7:25 PM           1411 get_file_structure.py
+-a----          6/8/2024   7:25 PM           2600 initialize_system.py
+-a----          6/8/2024   7:25 PM            518 integrate_gpt.py
+-a----          6/8/2024   2:51 PM            173 requirements.txt
+
+
+PS C:\dev\diamond_jack\scripts>
+(test_env) git status
+
+PS C:\dev\diamond_jack\scripts>
+(test_env) ls ..
+
+
+    Directory: C:\dev\diamond_jack
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          6/8/2024   7:25 PM                docs
+d-----          6/8/2024   7:25 PM                frontend
+d-----         6/10/2024   7:34 PM                logs
+d-----          6/9/2024   5:20 PM                new_env
+d-----          6/4/2024  11:46 PM                node_modules
+d-----         6/10/2024   7:41 PM                scripts
+d-----          6/8/2024   7:25 PM                src
+d-----          6/8/2024   7:23 PM                tests
+d-----          6/8/2024   7:36 PM                test_env
+-a----          6/9/2024   5:20 PM           3272 .gitignore
+-a----          6/4/2024  11:46 PM              8 .python-version
+-a----          6/5/2024   3:10 PM             67 apis.txt
+-a----          6/5/2024  12:02 AM            362 db_connect.py
+-a----          6/8/2024   7:23 PM            432 jira_config.js
+-a----          6/5/2024  12:02 AM            522 jira_example.py
+-a----          6/4/2024  11:46 PM          26951 package-lock.json
+-a----          6/4/2024  11:46 PM            622 package.json
+-a----          6/4/2024   4:03 PM             13 README.md
+-a----          6/9/2024   5:20 PM             47 requirements.txt
+
+
+PS C:\dev\diamond_jack\scripts>
+(test_env) mkdir jira
+
+
+    Directory: C:\dev\diamond_jack\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/10/2024   7:42 PM                jira
+
+
+PS C:\dev\diamond_jack\scripts>
+(test_env) mv jira_config.js jira_example.py jira
+>> TerminatingError(Move-Item): "A positional parameter cannot be found that accepts argument 'jira'."
+Move-Item : A positional parameter cannot be found that accepts argument 'jira'.
+At line:1 char:1
++ mv jira_config.js jira_example.py jira
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Move-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+Move-Item : A positional parameter cannot be found that accepts
+argument 'jira'.
+At line:1 char:1
++ mv jira_config.js jira_example.py jira
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Move-Item], Parame
+   terBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.Po
+   werShell.Commands.MoveItemCommand
+
+PS C:\dev\diamond_jack\scripts>
+(test_env) mv jira_config.js jira_example.py ../jira
+>> TerminatingError(Move-Item): "A positional parameter cannot be found that accepts argument '../jira'."
+Move-Item : A positional parameter cannot be found that accepts argument '../jira'.
+At line:1 char:1
++ mv jira_config.js jira_example.py ../jira
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Move-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+Move-Item : A positional parameter cannot be found that accepts
+argument '../jira'.
+At line:1 char:1
++ mv jira_config.js jira_example.py ../jira
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Move-Item], Parame
+   terBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.Po
+   werShell.Commands.MoveItemCommand
+
+PS C:\dev\diamond_jack\scripts>
+(test_env) mv ../jira_config.js ../jira_example.py ../jira
+>> TerminatingError(Move-Item): "A positional parameter cannot be found that accepts argument '../jira'."
+Move-Item : A positional parameter cannot be found that accepts argument '../jira'.
+At line:1 char:1
++ mv ../jira_config.js ../jira_example.py ../jira
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Move-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+Move-Item : A positional parameter cannot be found that accepts
+argument '../jira'.
+At line:1 char:1
++ mv ../jira_config.js ../jira_example.py ../jira
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Move-Item], Parame
+   terBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.Po
+   werShell.Commands.MoveItemCommand
+
+PS C:\dev\diamond_jack\scripts>
+(test_env) mr ../jira_config.js ../jira
+mr : The term 'mr' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ mr ../jira_config.js ../jira
++ ~~
+    + CategoryInfo          : ObjectNotFound: (mr:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+mr : The term 'mr' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the
+name, or if a path was included, verify that the path is correct and
+try again.
+At line:1 char:1
++ mr ../jira_config.js ../jira
++ ~~
+    + CategoryInfo          : ObjectNotFound: (mr:String) [], CommandN
+   otFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\dev\diamond_jack\scripts>
+(test_env) cd ..
+PS C:\dev\diamond_jack>
+(test_env) ls
+
+
+    Directory: C:\dev\diamond_jack
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          6/8/2024   7:25 PM                docs
+d-----          6/8/2024   7:25 PM                frontend
+d-----         6/10/2024   7:34 PM                logs
+d-----          6/9/2024   5:20 PM                new_env
+d-----          6/4/2024  11:46 PM                node_modules
+d-----         6/10/2024   7:42 PM                scripts
+d-----          6/8/2024   7:25 PM                src
+d-----          6/8/2024   7:23 PM                tests
+d-----          6/8/2024   7:36 PM                test_env
+-a----          6/9/2024   5:20 PM           3272 .gitignore
+-a----          6/4/2024  11:46 PM              8 .python-version
+-a----          6/5/2024   3:10 PM             67 apis.txt
+-a----          6/5/2024  12:02 AM            362 db_connect.py
+-a----          6/8/2024   7:23 PM            432 jira_config.js
+-a----          6/5/2024  12:02 AM            522 jira_example.py
+-a----          6/4/2024  11:46 PM          26951 package-lock.json
+-a----          6/4/2024  11:46 PM            622 package.json
+-a----          6/4/2024   4:03 PM             13 README.md
+-a----          6/9/2024   5:20 PM             47 requirements.txt
+
+
+PS C:\dev\diamond_jack>
+(test_env) ls scripts
+
+
+    Directory: C:\dev\diamond_jack\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/10/2024   7:42 PM                jira
+-a----          6/8/2024   7:25 PM            801 capture_execution_con
+                                                  text.py
+-a----         6/10/2024   7:32 PM           1642 capture_logs.ps1
+-a----          6/8/2024   2:50 PM           1332 generate_requirements
+                                                  .py
+-a----          6/8/2024   7:25 PM           1411 get_file_structure.py
+-a----          6/8/2024   7:25 PM           2600 initialize_system.py
+-a----          6/8/2024   7:25 PM            518 integrate_gpt.py
+-a----          6/8/2024   2:51 PM            173 requirements.txt
+
+
+PS C:\dev\diamond_jack>
+(test_env) rmdir scripts/jira
+PS C:\dev\diamond_jack>
+(test_env) mkdir jira
+
+
+    Directory: C:\dev\diamond_jack
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/10/2024   7:43 PM                jira
+
+
+PS C:\dev\diamond_jack>
+(test_env) ls
+
+
+    Directory: C:\dev\diamond_jack
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          6/8/2024   7:25 PM                docs
+d-----          6/8/2024   7:25 PM                frontend
+d-----         6/10/2024   7:43 PM                jira
+d-----         6/10/2024   7:34 PM                logs
+d-----          6/9/2024   5:20 PM                new_env
+d-----          6/4/2024  11:46 PM                node_modules
+d-----         6/10/2024   7:42 PM                scripts
+d-----          6/8/2024   7:25 PM                src
+d-----          6/8/2024   7:23 PM                tests
+d-----          6/8/2024   7:36 PM                test_env
+-a----          6/9/2024   5:20 PM           3272 .gitignore
+-a----          6/4/2024  11:46 PM              8 .python-version
+-a----          6/5/2024   3:10 PM             67 apis.txt
+-a----          6/5/2024  12:02 AM            362 db_connect.py
+-a----          6/8/2024   7:23 PM            432 jira_config.js
+-a----          6/5/2024  12:02 AM            522 jira_example.py
+-a----          6/4/2024  11:46 PM          26951 package-lock.json
+-a----          6/4/2024  11:46 PM            622 package.json
+-a----          6/4/2024   4:03 PM             13 README.md
+-a----          6/9/2024   5:20 PM             47 requirements.txt
+
+
+PS C:\dev\diamond_jack>
+(test_env) mv jira_config.js jira_example.py jira
+>> TerminatingError(Move-Item): "A positional parameter cannot be found that accepts argument 'jira'."
+Move-Item : A positional parameter cannot be found that accepts argument 'jira'.
+At line:1 char:1
++ mv jira_config.js jira_example.py jira
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Move-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+Move-Item : A positional parameter cannot be found that accepts
+argument 'jira'.
+At line:1 char:1
++ mv jira_config.js jira_example.py jira
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Move-Item], Parame
+   terBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.Po
+   werShell.Commands.MoveItemCommand
+
+PS C:\dev\diamond_jack>
+(test_env) ls
+
+
+    Directory: C:\dev\diamond_jack
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          6/8/2024   7:25 PM                docs
+d-----          6/8/2024   7:25 PM                frontend
+d-----         6/10/2024   7:43 PM                jira
+d-----         6/10/2024   7:34 PM                logs
+d-----          6/9/2024   5:20 PM                new_env
+d-----          6/4/2024  11:46 PM                node_modules
+d-----         6/10/2024   7:42 PM                scripts
+d-----          6/8/2024   7:25 PM                src
+d-----          6/8/2024   7:23 PM                tests
+d-----          6/8/2024   7:36 PM                test_env
+-a----          6/9/2024   5:20 PM           3272 .gitignore
+-a----          6/4/2024  11:46 PM              8 .python-version
+-a----          6/5/2024   3:10 PM             67 apis.txt
+-a----          6/5/2024  12:02 AM            362 db_connect.py
+-a----          6/8/2024   7:23 PM            432 jira_config.js
+-a----          6/5/2024  12:02 AM            522 jira_example.py
+-a----          6/4/2024  11:46 PM          26951 package-lock.json
+-a----          6/4/2024  11:46 PM            622 package.json
+-a----          6/4/2024   4:03 PM             13 README.md
+-a----          6/9/2024   5:20 PM             47 requirements.txt
+
+
+PS C:\dev\diamond_jack>
+(test_env) mv jira_config.js jira
+PS C:\dev\diamond_jack>
+(test_env) mv jira_example.py jira
+PS C:\dev\diamond_jack>
+(test_env) ls
+
+
+    Directory: C:\dev\diamond_jack
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          6/8/2024   7:25 PM                docs
+d-----          6/8/2024   7:25 PM                frontend
+d-----         6/10/2024   7:44 PM                jira
+d-----         6/10/2024   7:34 PM                logs
+d-----          6/9/2024   5:20 PM                new_env
+d-----          6/4/2024  11:46 PM                node_modules
+d-----         6/10/2024   7:42 PM                scripts
+d-----          6/8/2024   7:25 PM                src
+d-----          6/8/2024   7:23 PM                tests
+d-----          6/8/2024   7:36 PM                test_env
+-a----          6/9/2024   5:20 PM           3272 .gitignore
+-a----          6/4/2024  11:46 PM              8 .python-version
+-a----          6/5/2024   3:10 PM             67 apis.txt
+-a----          6/5/2024  12:02 AM            362 db_connect.py
+-a----          6/4/2024  11:46 PM          26951 package-lock.json
+-a----          6/4/2024  11:46 PM            622 package.json
+-a----          6/4/2024   4:03 PM             13 README.md
+-a----          6/9/2024   5:20 PM             47 requirements.txt
+
+
+PS C:\dev\diamond_jack>
+(test_env) mv db_connect.py scripts
+PS C:\dev\diamond_jack>
+(test_env) ls
+
+
+    Directory: C:\dev\diamond_jack
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          6/8/2024   7:25 PM                docs
+d-----          6/8/2024   7:25 PM                frontend
+d-----         6/10/2024   7:44 PM                jira
+d-----         6/10/2024   7:34 PM                logs
+d-----          6/9/2024   5:20 PM                new_env
+d-----          6/4/2024  11:46 PM                node_modules
+d-----         6/10/2024   7:44 PM                scripts
+d-----          6/8/2024   7:25 PM                src
+d-----          6/8/2024   7:23 PM                tests
+d-----          6/8/2024   7:36 PM                test_env
+-a----          6/9/2024   5:20 PM           3272 .gitignore
+-a----          6/4/2024  11:46 PM              8 .python-version
+-a----          6/5/2024   3:10 PM             67 apis.txt
+-a----          6/4/2024  11:46 PM          26951 package-lock.json
+-a----          6/4/2024  11:46 PM            622 package.json
+-a----          6/4/2024   4:03 PM             13 README.md
+-a----          6/9/2024   5:20 PM             47 requirements.txt
+
+
+PS C:\dev\diamond_jack>
+(test_env) mv apis.txt docs
+PS C:\dev\diamond_jack>
+(test_env) ls
+
+
+    Directory: C:\dev\diamond_jack
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/10/2024   7:45 PM                docs
+d-----          6/8/2024   7:25 PM                frontend
+d-----         6/10/2024   7:44 PM                jira
+d-----         6/10/2024   7:34 PM                logs
+d-----          6/9/2024   5:20 PM                new_env
+d-----          6/4/2024  11:46 PM                node_modules
+d-----         6/10/2024   7:44 PM                scripts
+d-----          6/8/2024   7:25 PM                src
+d-----          6/8/2024   7:23 PM                tests
+d-----          6/8/2024   7:36 PM                test_env
+-a----          6/9/2024   5:20 PM           3272 .gitignore
+-a----          6/4/2024  11:46 PM              8 .python-version
+-a----          6/4/2024  11:46 PM          26951 package-lock.json
+-a----          6/4/2024  11:46 PM            622 package.json
+-a----          6/4/2024   4:03 PM             13 README.md
+-a----          6/9/2024   5:20 PM             47 requirements.txt
+
+
+PS C:\dev\diamond_jack>
+(test_env) ls docs
+
+
+    Directory: C:\dev\diamond_jack\docs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          6/8/2024   7:23 PM                api
+d-----          6/4/2024   4:03 PM                business_plan_toc
+d-----          6/8/2024   7:23 PM                models
+d-----          6/8/2024   7:23 PM                services
+-a----          6/8/2024   7:23 PM              0 .gitkeep
+-a----          6/5/2024   3:10 PM             67 apis.txt
+-a----          6/8/2024   7:23 PM              0 architecture.md
+-a----          6/8/2024   7:25 PM           1249 conceptual_model.txt
+-a----          6/8/2024   7:23 PM            566 data_model.py.txt
+-a----          6/8/2024   7:25 PM           2403 initialize_system.py
+-a----          6/8/2024   7:23 PM              0 setup.md
+-a----          6/8/2024   7:25 PM            131 system_details.json
+-a----          6/4/2024   4:03 PM           3356 toc.txt
+-a----          6/8/2024   7:23 PM              0 usage.md
+
+
+PS C:\dev\diamond_jack>
+(test_env) cd scripts
+PS C:\dev\diamond_jack\scripts>
+(test_env) powershell.exe -File capture_logs.ps1
+
+PS C:\dev\diamond_jack\scripts>
+(test_env) notepad ../logs/full_shell_logs.txt
+PS C:\dev\diamond_jack\scripts>
+(test_env) powershell.exe -File capture_logs.ps1
+
+PS C:\dev\diamond_jack\scripts>
+(test_env) notepad capture_logs.ps1
+PS C:\dev\diamond_jack\scripts>
+(test_env) powershell.exe -File capture_logs.ps1
+
+PS C:\dev\diamond_jack\scripts>
