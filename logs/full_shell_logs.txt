@@ -124,3 +124,20 @@ At line:1 char:4
 PS C:\dev\diamond_jack>
 (test_env) notepad capture_logs.ps1
 PS C:\dev\diamond_jack>
+(test_env) powershell.exe -File capture_logs.ps1
+
+PS C:\dev\diamond_jack>
+(test_env) ls logs/full_shell_logs.txt
+
+
+    Directory: C:\dev\diamond_jack\logs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         6/10/2024   4:19 PM           5679 full_shell_logs.txt
+
+
+PS C:\dev\diamond_jack>
+(test_env) notepad logs/full_shell_logs.txt
+PS C:\dev\diamond_jack>
