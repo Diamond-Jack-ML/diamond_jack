@@ -521,3 +521,8 @@ PS C:\dev\diamond_jack\scripts>
 (test_env) powershell.exe -File capture_logs.ps1
 
 PS C:\dev\diamond_jack\scripts>
+(test_env) powershell.exe -File capture_logs.ps1
+
+PS C:\dev\diamond_jack\scripts>
+(test_env) notepad $PROFILE
+PS C:\dev\diamond_jack\scripts>
