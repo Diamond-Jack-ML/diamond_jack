@@ -1,0 +1,63 @@
+{
+    "myProject": {
+        "backend": {
+            "flask_app": {
+                "app.py": {},
+                "config.py": {},
+                "extensions.py": {},
+                "models": {},
+                "routes": {},
+                "static": {},
+                "templates": {},
+                "tests": {},
+                "migrate.py":{},
+                "requirements.txt": {}
+            },
+            "node_app": {
+                "bin": {},
+                "node_modules": {},
+                "public": {
+                    "javascripts": {},
+                    "stylesheets": {}
+                },
+                "routes": {},
+                "views": {},
+                "app.js": {},
+                "package.json": {}
+            },
+            "langchain": {
+                "configs": {},
+                "core": {},
+                "tests": {},
+                "requirements.txt": {},
+                "run.py": {}
+            }
+        },
+        "frontend": {
+            "public": {
+                "index.html": {},
+                "favicon.ico": {}
+            },
+            "src": {
+                "components": {},
+                "assets": {},
+                "redux": {
+                    "actions": {},
+                    "constants": {},
+                    "reducers": {}
+                },
+                "App.js": {},
+                "index.js": {}
+            },
+            "node_modules": {},
+            "package.json": {},
+            "package-lock.json": {},
+            "README.md": {}
+        },
+        "README.md": {},
+        "requirements.txt": {},
+        "package.json": {},
+        "docker-compose.yml": {},
+        ".gitignore": {}
+    }
+}

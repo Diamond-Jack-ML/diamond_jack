@@ -1,0 +1,12 @@
+# Python requirements.txt
+
+Flask==2.0.1
+Flask-Migrate==3.1.0
+
+# Node.js dependencies in package.json
+
+{
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
