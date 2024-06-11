@@ -1,37 +1,57 @@
-# capture_logs.ps1
+# Define paths
+$repoPath = "C:\dev\diamond_jack"
+$logsDir = "$repoPath\logs"
 
-Write-Output "Starting capture_logs.ps1 execution"
+# Generate a unique identifier for the shell session
+$sessionId = [guid]::NewGuid()
+$transcriptPath = "$logsDir\shell_logs_$sessionId.txt"
 
-# Ensure logs directory exists
-$logsDir = "C:\dev\diamond_jack\logs"
+# Change to the git repository directory
+Set-Location -Path $repoPath
+
+# Ensure the logs directory exists
 if (!(Test-Path -Path $logsDir)) {
     New-Item -ItemType Directory -Path $logsDir
 }
 
-# Stop the current transcript to finalize the log file
-Stop-Transcript
+# Start a new transcript session
+Start-Transcript -Path $transcriptPath
+Write-Host "Transcript started, output file is $transcriptPath"
 
-# Capturing system logs
-Write-Output "Capturing system logs"
-Get-EventLog -LogName System -Newest 100 | Out-File -FilePath "$logsDir\system_logs.txt"
-Write-Output "System logs captured successfully"
+# Function to stop transcription and commit logs
+function Stop-TranscriptionAndCommit {
+    param ($transcriptPath, $sessionId)
+    
+    try {
+        Stop-Transcript
+        Write-Host "Transcript stopped successfully for session $sessionId"
+    } catch {
+        Write-Host "No active transcription to stop for session $sessionId"
+    }
 
-# Navigate to the git repository
-Set-Location -Path "C:\dev\diamond_jack"
+    # Add logs to git
+    Write-Host "Adding logs to git"
+    git add $transcriptPath
+    Write-Host "Logs added to git successfully"
 
-# Adding logs to git
-Write-Output "Adding logs to git"
-git add logs/full_shell_logs.txt logs/system_logs.txt
-Write-Output "Logs added to git successfully"
+    # Get current timestamp
+    Write-Host "Getting current timestamp"
+    $currentTimestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 
-# Getting current timestamp
-$tstamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-Write-Output "Getting current timestamp"
+    # Commit logs with timestamp
+    Write-Host "Committing logs with timestamp"
+    git commit -m "Update shell logs - $currentTimestamp"
+    Write-Host "Logs committed to git successfully"
 
-# Committing logs with timestamp
-Write-Output "Committing logs with timestamp"
-git commit -m "Update shell and system logs - $tstamp"
-Write-Output "Logs committed to git successfully"
+    # Remove the shell session log file
+    Remove-Item -Path $transcriptPath
+    Write-Host "Shell session log file removed"
+}
 
-# Restarting transcript for the next session
-Start-Transcript -Path "$logsDir\full_shell_logs.txt" -Append
+# Register a script block to run when the shell session exits
+$scriptBlock = {
+    Stop-TranscriptionAndCommit -transcriptPath $transcriptPath -sessionId $sessionId
+}
+Register-EngineEvent PowerShell.Exiting -Action $scriptBlock
+
+Write-Host "Shell session setup complete for session $sessionId"
