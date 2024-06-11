@@ -1,0 +1,57 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240611191614
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 13876
+PSVersion: 5.1.22621.2506
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.2506
+BuildVersion: 10.0.22621.2506
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240611_191614.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                ...
+Shell session setup complete for session 20240611_191614
+
+
+PS C:\dev> cd diamond_jack
+PS C:\dev\diamond_jack> cd scripts
+PS C:\dev\diamond_jack\scripts> ls
+
+
+    Directory: C:\dev\diamond_jack\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          6/8/2024   7:25 PM            801 capture_execution_context.py
+-a----         6/10/2024  10:07 PM           1378 capture_logs.ps1
+-a----          6/5/2024  12:02 AM            362 db_connect.py
+-a----         6/10/2024   8:27 PM           1765 file_structure.json
+-a----          6/8/2024   2:50 PM           1332 generate_requirements.py
+-a----          6/8/2024   7:25 PM           1411 get_file_structure.py
+-a----          6/8/2024   7:25 PM           2600 initialize_system.py
+-a----          6/8/2024   7:25 PM            518 integrate_gpt.py
+-a----         6/10/2024   8:27 PM            103 project_requirements.json
+-a----          6/8/2024   2:51 PM            173 requirements.txt
+-a----         6/10/2024   9:59 PM           1378 stop_and_restart_transcripts.ps1
+
+
+PS C:\dev\diamond_jack\scripts> notepad db_connect.py
+PS C:\dev\diamond_jack\scripts> git log
+
+PS C:\dev\diamond_jack\scripts> exit
+**********************
+Windows PowerShell transcript end
+End time: 20240611191656
+**********************
