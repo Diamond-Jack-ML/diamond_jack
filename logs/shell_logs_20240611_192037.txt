@@ -1,0 +1,123 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240611192037
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 1684
+PSVersion: 5.1.22621.2506
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.2506
+BuildVersion: 10.0.22621.2506
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240611_192037.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                ...
+Shell session setup complete for session 20240611_192037
+
+
+PS C:\dev> cd diamond_jack
+PS C:\dev\diamond_jack> git diff
+diff --git a/apis.txt b/apis.txt
+index effe84ff..153b10c3 100644
+--- a/apis.txt
++++ b/apis.txt
+@@ -1 +1,3 @@
+ Open AI: sk-proj-gyFZUevwbMlQwtaOaaGmT3BlbkFJ2ghHZJgW6VqV6Jz29jCe
++
++LangSmith: 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
+diff --git a/logs/full_shell_logs.txt b/logs/full_shell_logs.txt
+deleted file mode 100644
+index 2d2ddb17..00000000
+--- a/logs/full_shell_logs.txt
++++ /dev/null
+@@ -1,26 +0,0 @@
+-﻿**********************
+-Windows PowerShell transcript start
+-Start time: 20240610223144
+-Username: LAPTOP-KI0CU6PN\thelo
+-RunAs User: LAPTOP-KI0CU6PN\thelo
+-Configuration Name:
+-Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+-Host Application: C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe -File capture_logs.ps1
+-Process ID: 23820
+-PSVersion: 5.1.22621.2506
+-PSEdition: Desktop
+-PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.2506
+-BuildVersion: 10.0.22621.2506
+-CLRVersion: 4.0.30319.42000
+-WSManStackVersion: 3.0
+PS C:\dev\diamond_jack> git log
+commit 54dd81cabdeca2192aca476e7bfa46197955e518 (HEAD -> main)
+Author: alan <tungstensumac@gmail.com>
+Date:   Tue Jun 11 19:20:21 2024 -0400
+
+    Update shell logs - 2024-06-11 19:20:21
+
+commit 90ab421edc3be71edc8ade7a59676c66475d8f2f
+Author: alan <tungstensumac@gmail.com>
+Date:   Tue Jun 11 19:19:48 2024 -0400
+
+    Update shell logs - 2024-06-11 19:19:48
+
+commit 722fa0afe21c15b3f164fa43c08cfc0a236b0b0d
+Author: alan <tungstensumac@gmail.com>
+Date:   Tue Jun 11 19:19:33 2024 -0400
+
+    Update shell logs - 2024-06-11 19:19:33
+
+commit 5732755125348f6c83c75f8889bcf4a81eec3220 (origin/main, origin/HEAD)
+Author: alan <tungstensumac@gmail.com>
+Date:   Tue Jun 11 19:17:32 2024 -0400
+
+    Update shell logs - 2024-06-11 19:17:32
+
+commit a31e13de969cd4df18c0f7d3cff9c57f904dd0f1
+Author: alan <tungstensumac@gmail.com>
+Date:   Tue Jun 11 19:16:57 2024 -0400
+
+    Update shell logs - 2024-06-11 19:16:57
+PS C:\dev\diamond_jack> git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   apis.txt
+        deleted:    logs/full_shell_logs.txt
+        deleted:    logs/shell_logs_20240611_191448.txt
+        deleted:    logs/shell_logs_20240611_191610.txt
+        deleted:    logs/shell_logs_20240611_191614.txt
+        deleted:    logs/shell_logs_20240611_191617.txt
+        deleted:    logs/shell_logs_20240611_191930.txt
+        deleted:    logs/shell_logs_20240611_191943.txt
+        deleted:    logs/shell_logs_20240611_191955.txt
+        deleted:    logs/shell_logs_50bcd813-9581-4140-98e6-466161ad3165.txt
+        deleted:    logs/shell_logs_6f40f648-bbd5-4817-9f4a-33357a2ca68b.txt
+        deleted:    logs/shell_logs_7bef6573-564e-42e6-8dd1-fbc50e61f753.txt
+        deleted:    logs/shell_logs_9de6ff66-041f-453e-a4b4-2e8eb02d1b1a.txt
+        deleted:    logs/shell_logs_b7a42d7f-d2fd-4b3e-b23d-df8291b28ff2.txt
+        deleted:    logs/system_logs.txt
+        deleted:    stop_and_restart_transcripts.ps1
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        logs/shell_logs_20240611_192037.txt
+        test_env/Scripts/langsmith.exe
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\dev\diamond_jack> exit
+**********************
+Windows PowerShell transcript end
+End time: 20240611192058
+**********************
