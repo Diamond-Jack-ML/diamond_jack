@@ -1,0 +1,44 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240610220928
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 9340
+PSVersion: 5.1.22621.2506
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.2506
+BuildVersion: 10.0.22621.2506
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_9de6ff66-041f-453e-a4b4-2e8eb02d1b1a.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                ...
+Shell session setup complete for session 9de6ff66-041f-453e-a4b4-2e8eb02d1b1a
+
+
+PS C:\dev> cd diamond_jack
+PS C:\dev\diamond_jack> git status
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    capture_logs.ps1
+        modified:   scripts/capture_logs.ps1
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        logs/shell_logs_6f40f648-bbd5-4817-9f4a-33357a2ca68b.txt
+        logs/shell_logs_9de6ff66-041f-453e-a4b4-2e8eb02d1b1a.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\dev\diamond_jack> git branch
+
