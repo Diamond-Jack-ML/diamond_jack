@@ -1,0 +1,47 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240611191930
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 3804
+PSVersion: 5.1.22621.2506
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.2506
+BuildVersion: 10.0.22621.2506
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240611_191930.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                ...
+Shell session setup complete for session 20240611_191930
+
+
+PS C:\dev> ls
+
+
+    Directory: C:\dev
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/10/2024  10:26 PM                diamond_jack
+d-----         6/10/2024   3:52 PM                logs
+d-----          6/7/2024   4:00 PM                test
+-a----          6/5/2024   3:07 PM      232966472 diamond_jack.zip
+-a----          6/3/2024   9:16 PM           1674 tungsten-sumac.pem
+-a----          6/4/2024   9:28 PM           1462 tungsten-sumac.ppk
+
+
+PS C:\dev> exit
+**********************
+Windows PowerShell transcript end
+End time: 20240611191933
+**********************
