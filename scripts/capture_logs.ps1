@@ -39,3 +39,7 @@ Write-Host "Logs committed to git successfully"
 # Restart transcription for new shell sessions
 Start-Transcript -Path $transcriptPath
 Write-Host "Transcript started, output file is $transcriptPath"
+
+
+
+
