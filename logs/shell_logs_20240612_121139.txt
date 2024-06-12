@@ -1,6 +1,6 @@
 ﻿**********************
 Windows PowerShell transcript start
-Start time: 20240612121139
+Start time: 20240612121140
 Username: LAPTOP-KI0CU6PN\thelo
 RunAs User: LAPTOP-KI0CU6PN\thelo
 Configuration Name: 
@@ -17,16 +17,7 @@ PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
 **********************
 Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240612_121139.txt
-Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240612_121139.txt
-Adding logs to git
-
-Logs added to git successfully
-Getting current timestamp
-Committing logs with timestamp
-[main 4019cc67] Update shell logs - 2024-06-12 12:11:39
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 logs/shell_logs_20240612_121139.txt
-Logs committed to git successfully
+New transcript started for next session
 **********************
 Windows PowerShell transcript end
 End time: 20240612121140
