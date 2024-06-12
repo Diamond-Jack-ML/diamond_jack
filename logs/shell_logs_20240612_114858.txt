@@ -1,0 +1,60 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240612114858
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 4700
+PSVersion: 5.1.22621.3672
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.3672
+BuildVersion: 10.0.22621.3672
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240612_114858.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                ...
+Shell session setup complete for session 20240612_114858
+
+
+PS C:\dev> cd diamond_jack
+PS C:\dev\diamond_jack> cd scripts
+PS C:\dev\diamond_jack\scripts> git add .
+
+PS C:\dev\diamond_jack\scripts> git commit -m "Testing commit script"
+        deleted:    ../logs/shell_logs_20240612_113211.txt
+        deleted:    ../logs/shell_logs_20240612_113947.txt
+        deleted:    ../logs/shell_logs_20240612_114051.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../logs/shell_logs_20240612_114139.txt
+        ../logs/shell_logs_20240612_114350.txt
+        ../logs/shell_logs_20240612_114858.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\dev\diamond_jack\scripts> git add ../logs/shell_logs*.txt
+
+PS C:\dev\diamond_jack\scripts> git commit -m "Committed logs to test commit script"
+
+PS C:\dev\diamond_jack\scripts> ls ../logs
+
+
+    Directory: C:\dev\diamond_jack\logs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/12/2024  11:43 AM                archive
+-a----         6/12/2024  11:43 AM           2295 shell_logs_20240612_114139.txt
+-a----         6/12/2024  11:47 AM           2287 shell_logs_20240612_114350.txt
+-a----         6/12/2024  11:49 AM           1795 shell_logs_20240612_114858.txt
+
+
