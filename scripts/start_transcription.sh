@@ -11,3 +11,4 @@ script -q -a $TRANSCRIPT_FILE
 
 # Mark the end of the transcription
 echo "End of transcription for session $TIMESTAMP" >> $TRANSCRIPT_FILE
+
