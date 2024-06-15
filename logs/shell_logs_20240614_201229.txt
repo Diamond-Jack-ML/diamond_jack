@@ -1,0 +1,36 @@
+Script started on 2024-06-14 20:12:29-04:00 [TERM="xterm-256color" TTY="/dev/pts/921" COLUMNS="80" LINES="24"]
+[?2004h]0;alan@alan-HP-Laptop-14-ep0xxx: ~[01;32malan@alan-HP-Laptop-14-ep0xxx[00m:[01;34m~[00m$ ls -alt diamond_jack/.git/hooks/post-commit
+[?2004l-rwxrwxr-x 1 alan alan 378 Jun 14 20:10 [0m[01;32mdiamond_jack/.git/hooks/post-commit[0m
+[?2004h]0;alan@alan-HP-Laptop-14-ep0xxx: ~[01;32malan@alan-HP-Laptop-14-ep0xxx[00m:[01;34m~[00m$ ils[K[K[Kls
+[?2004l[0m[01;34mDesktop[0m       [01;34mDocuments[0m  [01;34mMusic[0m     [01;34mPublic[0m  [01;34mTemplates[0m
+[01;34mdiamond_jack[0m  [01;34mDownloads[0m  [01;34mPictures[0m  [01;34msnap[0m    [01;34mVideos[0m
+[?2004h]0;alan@alan-HP-Laptop-14-ep0xxx: ~[01;32malan@alan-HP-Laptop-14-ep0xxx[00m:[01;34m~[00m$ cd diamond_jack
+[?2004l[?2004h]0;alan@alan-HP-Laptop-14-ep0xxx: ~/diamond_jack[01;32malan@alan-HP-Laptop-14-ep0xxx[00m:[01;34m~/diamond_jack[00m$ ls -alt
+[?2004ltotal 112
+drwxrwxr-x  2 alan alan  4096 Jun 14 20:12  [0m[01;34mlogs[0m
+drwxrwxr-x  2 alan alan  4096 Jun 14 20:11  [01;34mscripts[0m
+drwxrwxr-x  8 alan alan  4096 Jun 14 20:03  [01;34m.git[0m
+drwxr-x--- 18 alan alan  4096 Jun 14 19:56  [01;34m..[0m
+drwxrwxr-x 13 alan alan  4096 Jun 14 19:25  [01;34m.[0m
+drwxrwxr-x  3 alan alan  4096 Jun 14 19:23 [01;34m'~'[0m
+drwxrwxr-x  6 alan alan  4096 Jun 14 15:41  [01;34mdocs[0m
+drwxrwxr-x  7 alan alan  4096 Jun 14 15:41  [01;34msrc[0m
+drwxrwxr-x  6 alan alan  4096 Jun 14 15:41  [01;34mtests[0m
+-rw-rw-r--  1 alan alan  3109 Jun 14 15:36  .gitignore
+drwxrwxr-x  5 alan alan  4096 Jun 14 15:21  [01;34mlinenv[0m
+drwxrwxr-x 68 alan alan  4096 Jun 14 15:14  [01;34mnode_modules[0m
+-rw-rw-r--  1 alan alan   595 Jun 14 15:14  package.json
+-rw-rw-r--  1 alan alan 26235 Jun 14 15:14  package-lock.json
+-rw-rw-r--  1 alan alan    43 Jun 14 15:14  requirements.txt
+drwxrwxr-x  2 alan alan  4096 Jun 14 15:14  [01;34mjira[0m
+-rw-rw-r--  1 alan alan   424 Jun 14 15:14  jira_config.js
+-rw-rw-r--  1 alan alan   508 Jun 14 15:14  jira_example.py
+drwxrwxr-x  4 alan alan  4096 Jun 14 15:14  [01;34mfrontend[0m
+-rw-rw-r--  1 alan alan   347 Jun 14 15:14  db_connect.py
+-rw-rw-r--  1 alan alan     7 Jun 14 15:14  .python-version
+-rw-rw-r--  1 alan alan    13 Jun 14 15:14  README.md
+[?2004h]0;alan@alan-HP-Laptop-14-ep0xxx: ~/diamond_jack[01;32malan@alan-HP-Laptop-14-ep0xxx[00m:[01;34m~/diamond_jack[00m$ exit
+[?2004lexit
+
+Script done on 2024-06-14 20:13:06-04:00 [COMMAND_EXIT_CODE="0"]
+End of transcription for session 20240614_201229
