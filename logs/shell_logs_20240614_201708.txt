@@ -1,0 +1,16 @@
+Script started on 2024-06-14 20:17:08-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h]0;alan@alan-HP-Laptop-14-ep0xxx: ~[01;32malan@alan-HP-Laptop-14-ep0xxx[00m:[01;34m~[00m$ cd diamond_jack
+[?2004l[?2004h]0;alan@alan-HP-Laptop-14-ep0xxx: ~/diamond_jack[01;32malan@alan-HP-Laptop-14-ep0xxx[00m:[01;34m~/diamond_jack[00m$ ls
+[?2004l[0m[01;34m'~'[0m              [01;34mjira[0m              [01;34mlogs[0m                README.md          [01;34mtests[0m
+ db_connect.py   jira_config.js    [01;34mnode_modules[0m        requirements.txt
+ [01;34mdocs[0m            jira_example.py   package.json        [01;34mscripts[0m
+ [01;34mfrontend[0m        [01;34mlinenv[0m            package-lock.json   [01;34msrc[0m
+[?2004h]0;alan@alan-HP-Laptop-14-ep0xxx: ~/diamond_jack[01;32malan@alan-HP-Laptop-14-ep0xxx[00m:[01;34m~/diamond_jack[00m$ cd logs
+[?2004l[?2004h]0;alan@alan-HP-Laptop-14-ep0xxx: ~/diamond_jack/logs[01;32malan@alan-HP-Laptop-14-ep0xxx[00m:[01;34m~/diamond_jack/logs[00m$ ls
+[?2004lshell_logs_20240614_201229.txt  shell_logs_20240614_201622.txt
+shell_logs_20240614_201500.txt  shell_logs_20240614_201708.txt
+[?2004h]0;alan@alan-HP-Laptop-14-ep0xxx: ~/diamond_jack/logs[01;32malan@alan-HP-Laptop-14-ep0xxx[00m:[01;34m~/diamond_jack/logs[00m$ git add .
+[?2004l[?2004h]0;alan@alan-HP-Laptop-14-ep0xxx: ~/diamond_jack/logs[01;32malan@alan-HP-Laptop-14-ep0xxx[00m:[01;34m~/diamond_jack/logs[00m$ git commit -m "Test commit"
+[?2004l
+Script done on 2024-06-14 20:17:44-04:00 [COMMAND_EXIT_CODE="0"]
+End of transcription for session 20240614_201708
