@@ -33,9 +33,7 @@ def main():
 
 
     jira_data = fetch_jira_project_state()
-    
-    with open("jira_data.txt", "w") as file:
-        file.write(str(jira_data))
+    print("Jira Data:", jira_data)
 
 if __name__ == "__main__":
     main()
