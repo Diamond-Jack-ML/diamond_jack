@@ -1,0 +1,4 @@
+Script started on 2024-06-16 17:47:09-04:00 [<not executed on terminal>]
+[1m[7m%[27m[1m[0m                                                                                ]2;alan@alan-HP-Laptop-14-ep0xxx:~/diamond_jack]1;~/diamond_jack]7;file://alan-HP-Laptop-14-ep0xxx/home/alan/diamond_jack\[0m[27m[24m[J[01;32m➜  [36mdiamond_jack[00m [K[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [36mdiamond_jack[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K
+Script done on 2024-06-16 17:47:49-04:00 [COMMAND_EXIT_CODE="0"]
+End of transcription for session 20240616_174709

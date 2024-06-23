@@ -3,7 +3,7 @@ import requests
 import base64
 
 # Jira API configuration
-JIRA_BASE_URL = "https://agency-audia.atlassian.net"
+JIRA_BASE_URL = os.getenv("JIRA_BASE_URL")
 JIRA_API_TOKEN = os.getenv("JIRA_API_TOKEN")
 JIRA_USER_EMAIL = os.getenv("JIRA_USER_EMAIL")
 
@@ -31,8 +31,10 @@ def fetch_jira_project_state():
 def main():
     # Fetch current Jira project state
 
+
     jira_data = fetch_jira_project_state()
-    print("Jira Data:", jira_data)
+    with open("jira_data.txt", "w") as f:
+        f.write(str(jira_data))
 
 if __name__ == "__main__":
     main()
