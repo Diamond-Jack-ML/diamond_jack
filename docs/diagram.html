@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <div class="mermaid">
+    flowchart TD
+      A[Create HEAD] --> B[Generate conceptual data model using GPT]
+      B --> C[Generate documentation and C4 architecture diagrams automatically using GPT]
+      C --> D[Create folder and file structure]
+      D --> E[Create a project in Jira using the Jira API in our system]
+      E --> F[Identify dependencies]
+      F --> G[Complete first unblocked issue]
+      G --> H[Re-generate documentation]
+      H --> I[Update HEAD]
+      I --> J[Update C4 model view]
+
+      subgraph HEAD
+        K[All workspace information including terminal logs]
+        L[The current Jira issue]
+        M[The current code documentation]
+        N[The current C4 diagram]
+        O[A pointer to HEAD in the diagram]
+        P[A git diff]
+      end
+
+      I --> K
+      I --> L
+      I --> M
+      I --> N
+      I --> O
+      I --> P
+  </div>
+
+  <script>
+    mermaid.initialize({startOnLoad:true});
+  </script>
+</body>
+</html>

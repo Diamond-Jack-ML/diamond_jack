@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 function App() {
   const [inputText, setInputText] = useState('');
+  const [userRole, setUserRole] = useState('');
   const [response, setResponse] = useState('');
 
   const handleSubmit = async (e) => {
@@ -12,7 +13,7 @@ function App() {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ input_text: inputText })
+        body: JSON.stringify({ input_text: inputText, user_role: userRole })
       });
       const data = await res.json();
       setResponse(data.response);
@@ -23,8 +24,17 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Ask GPT-4</h1>
+      <h1>Main System</h1>
       <form onSubmit={handleSubmit}>
+      <label>
+          Enter your role:
+          <input
+            type="text"
+            value={userRole}
+            onChange={(e) => setUserRole(e.target.value)}
+          />
+        </label>
+        <br />
         <label>
           Enter your text:
           <textarea
