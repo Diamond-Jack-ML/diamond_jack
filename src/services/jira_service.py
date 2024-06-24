@@ -1,15 +1,15 @@
 from jira import JIRA
 import os
 
-JIRA_BASE_URL = os.getenv("JIRA_BASE_URL")
-JIRA_API_TOKEN = os.getenv("JIRA_API_TOKEN")
-JIRA_USER_EMAIL = os.getenv("JIRA_USER_EMAIL")
+BASE_URL = os.getenv("ATLASSIAN_BASE_URL")
+API_TOKEN = os.getenv("ATLASSIAN_API_TOKEN")
+USER_EMAIL = os.getenv("ATLASSIAN_USER_EMAIL")
 
 class JiraService:
     def __init__(self):
         self.jira = JIRA(
-            server=JIRA_BASE_URL
-            basic_auth=(JIRA_USERNAME,JIRA_API_TOKEN)
+            server=BASE_URL,
+            basic_auth=(USER_EMAIL,API_TOKEN)
         )
 
 

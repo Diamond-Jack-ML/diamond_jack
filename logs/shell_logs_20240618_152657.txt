@@ -1,0 +1,4 @@
+Script started on 2024-06-18 15:26:57-04:00 [<not executed on terminal>]
+[?2004h]0;alan@alan-HP-Laptop-14-ep0xxx: ~/diamond_jack[01;32malan@alan-HP-Laptop-14-ep0xxx[00m:[01;34m~/diamond_jack[00m$ 
+Script done on 2024-06-18 15:28:11-04:00 [COMMAND_EXIT_CODE="0"]
+End of transcription for session 20240618_152657

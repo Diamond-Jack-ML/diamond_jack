@@ -10,13 +10,12 @@ app = Flask(__name__)
 jira_service = JiraService()
 
 # Jira API configuration
-JIRA_BASE_URL = os.getenv("JIRA_BASE_URL")
-JIRA_API_TOKEN = os.getenv("JIRA_API_TOKEN")
-JIRA_USER_EMAIL = os.getenv("JIRA_USER_EMAIL")
-JIRA_LEAD_ID = os.getenv("JIRA_LEAD_ID")
+BASE_URL = os.getenv("ATLASSIAN_BASE_URL")
+API_TOKEN = os.getenv("ATLASSIAN_API_TOKEN")
+USER_EMAIL = os.getenv("ATLASSIAN_USER_EMAIL")
 
 def get_headers():
-    auth = f"{JIRA_USER_EMAIL}:{JIRA_API_TOKEN}"
+    auth = f"{USER_EMAIL}:{API_TOKEN}"
     auth_bytes = auth.encode('ascii')
     auth_base64 = base64.b64encode(auth_bytes).decode('ascii')
 
@@ -28,7 +27,7 @@ def get_headers():
     print(f"Authorization Header: {headers['Authorization']}")
     return headers
 
-
+#Creates Jira project using requests library (services/jira_service.py uses JIRA library)
 def create_project(data):
     
     data=request.json
@@ -40,7 +39,7 @@ def create_project(data):
     return jsonify(project.raw)
 
 def create_issue(project_key, summary, description, issue_type="Task"):
-    url = f"{JIRA_BASE_URL}/rest/api/3/issue"
+    url = f"{BASE_URL}/rest/api/3/issue"
     payload = {
         "fields": {
             "project": {
@@ -68,10 +67,10 @@ def create_issue(project_key, summary, description, issue_type="Task"):
         }
     }
 
-    response = requests.post(url, headers=get_headers(), data=json.dumps(payload))
-    print(f"Response Status Code: {response.status_code}")
-    print(f"Response Body: {response.text}")
-    return response.json()
+    # response = requests.post(url, headers=get_headers(), data=json.dumps(payload))
+    # print(f"Response Status Code: {response.status_code}")
+    # print(f"Response Body: {response.text}")
+    # return response.json()
 
 
 def main():
@@ -79,7 +78,7 @@ def main():
     project_key = "MVP"  # Replace with an actual project key that exists in your Jira instance
 
     # Check if the project already exists
-    url = f"{JIRA_BASE_URL}/rest/api/3/project/{project_key}"
+    url = f"{BASE_URL}/rest/api/3/project/{project_key}"
     response = requests.get(url, headers=get_headers())
     if response.status_code == 200:
         print(f"Project {project_key} already exists.")
@@ -89,7 +88,7 @@ def main():
         project_data = {
             "key": project_key,
             "name": project_name,
-            "lead_email": JIRA_USER_EMAIL
+            "lead_email": USER_EMAIL
         }
         project = create_project(project_data)
         print(f"Created project: {project}")

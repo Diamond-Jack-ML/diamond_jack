@@ -7,12 +7,12 @@ class GPTService:
         print(f"Using OpenAI API Key: {self.api_key}")  # Debugging line
         openai.api_key = self.api_key
 
-    def get_structured_response(self, input_text):
+    def get_structured_response(self, input_text, user_role):
         response = openai.ChatCompletion.create(
             model="gpt-4",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant."},
-                {"role": "user", "content": f"Convert the following input into a conceptual and logical data model:\n{input_text}"}
+                {"role": "user", "content": f"{user_role}:\n{input_text}"}
             ]
         )
         return response['choices'][0]['message']['content'].strip()
