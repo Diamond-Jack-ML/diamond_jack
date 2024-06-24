@@ -3,9 +3,9 @@ import requests
 import base64
 
 # Jira API configuration
-JIRA_BASE_URL = os.getenv("JIRA_BASE_URL")
-JIRA_API_TOKEN = os.getenv("JIRA_API_TOKEN")
-JIRA_USER_EMAIL = os.getenv("JIRA_USER_EMAIL")
+JIRA_BASE_URL = os.getenv("ATLASSIAN_BASE_URL")
+JIRA_API_TOKEN = os.getenv("ATLASSIAN_API_TOKEN")
+JIRA_USER_EMAIL = os.getenv("ATLASSIAN_USER_EMAIL")
 
 def get_jira_headers():
     auth = f"{JIRA_USER_EMAIL}:{JIRA_API_TOKEN}"
