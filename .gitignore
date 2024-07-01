@@ -7,7 +7,7 @@ __pycache__/
 *.so
 
 # Virtual Environment
-dj_env/
+*env
 
 # Distribution / packaging
 .Python

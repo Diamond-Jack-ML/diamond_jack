@@ -1,0 +1,299 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240622220126
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\thelo\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+Process ID: 7488
+PSVersion: 5.1.22621.3672
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.3672
+BuildVersion: 10.0.22621.3672
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240622_220126.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location
+--     ----            -------------   -----         -----------     --------
+1      PowerShell.E...                 NotStarted    False
+Shell session setup complete for session 20240622_220126
+
+
+PS>try { . "c:\Users\thelo\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+]633;A]633;P;Cwd=C:\x5cdevPS C:\dev> ]633;P;Prompt=PS C:\x5cdev> ]633;B
+PS>cd diamond_jack
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>./new_env/Scripts/activate
+./new_env/Scripts/activate : The term './new_env/Scripts/activate' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is 
+correct and try again.
+At line:1 char:1
++ ./new_env/Scripts/activate
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (./new_env/Scripts/activate:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+./new_env/Scripts/activate : The term './new_env/Scripts/activate' is not recognized
+as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and
+try again.
+At line:1 char:1
++ ./new_env/Scripts/activate
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (./new_env/Scripts/activate:String) [],
+   CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>ls
+
+
+    Directory: C:\dev\diamond_jack
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/23/2024   1:54 AM                docs
+d-----          6/8/2024   7:25 PM                frontend
+d-----         6/10/2024   7:44 PM                jira
+d-----         6/23/2024   1:54 AM                linenv
+d-----         6/22/2024  10:01 PM                logs
+d-----         6/23/2024   1:54 AM                scripts
+d-----         6/23/2024   1:54 AM                src
+d-----         6/23/2024   1:54 AM                tests
+d-----         6/23/2024   1:54 AM                test_env
+d-----         6/23/2024   1:54 AM                ~
+-a----         6/12/2024  11:44 AM           3303 .gitignore
+-a----          6/4/2024  11:46 PM              8 .python-version
+-a----         6/10/2024   8:27 PM            362 db_connect.py
+-a----         6/12/2024  12:11 PM           2873 hooks_debug.log
+-a----         6/10/2024   8:27 PM            432 jira_config.js
+-a----         6/23/2024   1:54 AM          31653 jira_data.txt
+-a----         6/10/2024   8:27 PM            522 jira_example.py
+-a----         6/23/2024   1:54 AM            646 package.json
+-a----          6/4/2024   4:03 PM             13 README.md
+-a----         6/23/2024   1:54 AM             53 requirements.txt
+-a----         6/23/2024   1:54 AM              6 test_commit.txt
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>./test_env/Scripts/activate
+./test_env/Scripts/activate : The term './test_env/Scripts/activate' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the 
+path is correct and try again.
+At line:1 char:1
++ ./test_env/Scripts/activate
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (./test_env/Scripts/activate:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+./test_env/Scripts/activate : The term './test_env/Scripts/activate' is not recognized
+as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and
+try again.
+At line:1 char:1
++ ./test_env/Scripts/activate
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (./test_env/Scripts/activate:String) [],
+    CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>rm -r linenv
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>rm -r testenv
+rm : Cannot find path 'C:\dev\diamond_jack\testenv' because it does not exist.
+At line:1 char:1
++ rm -r testenv
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\dev\diamond_jack\testenv:String) [Remove-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+rm : Cannot find path 'C:\dev\diamond_jack\testenv' because it does not exist.
+At line:1 char:1
++ rm -r testenv
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\dev\diamond_jack\testenv:String) [Re
+   move-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCom
+   mand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>rm -r test_env
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>notepad .gitignore
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>ls
+
+
+    Directory: C:\dev\diamond_jack
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/23/2024   1:54 AM                docs
+d-----          6/8/2024   7:25 PM                frontend
+d-----         6/10/2024   7:44 PM                jira
+d-----         6/22/2024  10:01 PM                logs
+d-----         6/23/2024   1:54 AM                scripts
+d-----         6/23/2024   1:54 AM                src
+d-----         6/23/2024   1:54 AM                tests
+d-----         6/23/2024   1:54 AM                ~
+-a----         6/22/2024  10:02 PM           3301 .gitignore
+-a----          6/4/2024  11:46 PM              8 .python-version
+-a----         6/10/2024   8:27 PM            362 db_connect.py
+-a----         6/12/2024  12:11 PM           2873 hooks_debug.log
+-a----         6/10/2024   8:27 PM            432 jira_config.js
+-a----         6/23/2024   1:54 AM          31653 jira_data.txt
+-a----         6/10/2024   8:27 PM            522 jira_example.py
+-a----         6/23/2024   1:54 AM            646 package.json
+-a----          6/4/2024   4:03 PM             13 README.md
+-a----         6/23/2024   1:54 AM             53 requirements.txt
+-a----         6/23/2024   1:54 AM              6 test_commit.txt
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>python -m venv winenv
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>pip install -r requirements.txt
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>notepad requirements.txt
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>node --version
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>npm --version
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>openai --version
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>jira --version
+jira : The term 'jira' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ jira --version
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (jira:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+jira : The term 'jira' is not recognized as the name of a cmdlet, function, script
+file, or operable program. Check the spelling of the name, or if a path was included,
+verify that the path is correct and try again.
+At line:1 char:1
++ jira --version
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (jira:String) [], CommandNotFoundExcepti
+   on
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>flask --version
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>pip install Flask==2.1.2
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>pip freeze
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>pip install requests
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>pip uninstall flask
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>pip uninstall npm
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>pip uninstall openai
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>pip uninstall requests
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>notepad requirements.txt
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>pip uninstall flask-cors
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>ls
+
+
+    Directory: C:\dev\diamond_jack
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/23/2024   1:54 AM                docs
+d-----          6/8/2024   7:25 PM                frontend
+d-----         6/10/2024   7:44 PM                jira
+d-----         6/22/2024  10:01 PM                logs
+d-----         6/23/2024   1:54 AM                scripts
+d-----         6/23/2024   1:54 AM                src
+d-----         6/23/2024   1:54 AM                tests
+d-----         6/22/2024  10:03 PM                winenv
+d-----         6/23/2024   1:54 AM                ~
+-a----         6/22/2024  10:02 PM           3301 .gitignore
+-a----          6/4/2024  11:46 PM              8 .python-version
+-a----         6/10/2024   8:27 PM            362 db_connect.py
+-a----         6/12/2024  12:11 PM           2873 hooks_debug.log
+-a----         6/10/2024   8:27 PM            432 jira_config.js
+-a----         6/23/2024   1:54 AM          31653 jira_data.txt
+-a----         6/10/2024   8:27 PM            522 jira_example.py
+-a----         6/23/2024   1:54 AM            646 package.json
+-a----          6/4/2024   4:03 PM             13 README.md
+-a----         6/23/2024   1:54 AM             53 requirements.txt
+-a----         6/23/2024   1:54 AM              6 test_commit.txt
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>rm jira_config.js
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>rm jira_example.py
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>rm test_commit.txt
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>ls
+
+
+    Directory: C:\dev\diamond_jack
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/23/2024   1:54 AM                docs
+d-----          6/8/2024   7:25 PM                frontend
+d-----         6/10/2024   7:44 PM                jira
+d-----         6/22/2024  10:01 PM                logs
+d-----         6/23/2024   1:54 AM                scripts
+d-----         6/23/2024   1:54 AM                src
+d-----         6/23/2024   1:54 AM                tests
+d-----         6/22/2024  10:03 PM                winenv
+d-----         6/23/2024   1:54 AM                ~
+-a----         6/22/2024  10:02 PM           3301 .gitignore
+-a----          6/4/2024  11:46 PM              8 .python-version
+-a----         6/10/2024   8:27 PM            362 db_connect.py
+-a----         6/12/2024  12:11 PM           2873 hooks_debug.log
+-a----         6/23/2024   1:54 AM          31653 jira_data.txt
+-a----         6/23/2024   1:54 AM            646 package.json
+-a----          6/4/2024   4:03 PM             13 README.md
+-a----         6/23/2024   1:54 AM             53 requirements.txt
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>./winenv/Scripts/activate
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+(winenv) pip install -r requirements.txt
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+(winenv) node --version
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
