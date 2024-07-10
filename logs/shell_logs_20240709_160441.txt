@@ -1,0 +1,132 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240709160441
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6760
+PSVersion: 5.1.22621.3672
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.3672
+BuildVersion: 10.0.22621.3672
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240709_160441.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                ...
+Shell session setup complete for session 20240709_160441
+
+
+PS C:\dev> langsmith --version
+langsmith : The term 'langsmith' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ langsmith --version
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (langsmith:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+langsmith : The term 'langsmith' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ langsmith --version
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (langsmith:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\dev> langchain --version
+langchain : The term 'langchain' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ langchain --version
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (langchain:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+langchain : The term 'langchain' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ langchain --version
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (langchain:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\dev> npm --version
+10.7.0
+PS C:\dev> jira --version
+jira : The term 'jira' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ jira --version
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (jira:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+jira : The term 'jira' is not recognized as the name of a cmdlet, function,
+script file, or operable program. Check the spelling of the name, or if a
+path was included, verify that the path is correct and try again.
+At line:1 char:1
++ jira --version
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (jira:String) [], CommandNotFo
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\dev> openai --version
+openai : The term 'openai' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ openai --version
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (openai:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+openai : The term 'openai' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name,
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ openai --version
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (openai:String) [], CommandNot
+   FoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\dev> streamlit --version
+streamlit : The term 'streamlit' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ streamlit --version
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (streamlit:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+streamlit : The term 'streamlit' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name,
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ streamlit --version
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (streamlit:String) [], Command
+   NotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\dev> tiktoken --version
+tiktoken : The term 'tiktoken' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ tiktoken --version
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (tiktoken:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+tiktoken : The term 'tiktoken' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name,
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ tiktoken --version
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (tiktoken:String) [], CommandN
+   otFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+

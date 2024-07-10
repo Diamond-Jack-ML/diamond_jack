@@ -1,0 +1,90 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240705124703
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 21940
+PSVersion: 5.1.22621.3672
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.3672
+BuildVersion: 10.0.22621.3672
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240705_124703.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                ...
+Shell session setup complete for session 20240705_124703
+
+
+PS C:\dev> cd diamond_jack
+PS C:\dev\diamond_jack> ls
+
+
+    Directory: C:\dev\diamond_jack
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/30/2024   8:37 PM                docs
+d-----         6/30/2024   8:37 PM                frontend
+d-----         6/10/2024   7:44 PM                jira
+d-----         6/30/2024   8:37 PM                linenv
+d-----          7/5/2024  12:47 PM                logs
+d-----         6/30/2024   8:37 PM                scripts
+d-----         6/30/2024   8:37 PM                src
+d-----         6/23/2024   1:54 AM                tests
+d-----         6/22/2024  10:03 PM                winenv
+d-----         6/23/2024   1:54 AM                ~
+-a----         6/30/2024   8:41 PM           3269 .gitignore
+-a----          6/4/2024  11:46 PM              8 .python-version
+-a----         6/10/2024   8:27 PM            362 db_connect.py
+-a----         6/12/2024  12:11 PM           2873 hooks_debug.log
+-a----         6/30/2024   8:37 PM            432 jira_config.js
+-a----         6/23/2024   1:54 AM          31653 jira_data.txt
+-a----         6/30/2024   8:37 PM            522 jira_example.py
+-a----         6/23/2024   1:54 AM            646 package.json
+-a----          6/4/2024   4:03 PM             13 README.md
+-a----         6/23/2024   1:54 AM             53 requirements.txt
+-a----         6/30/2024   8:37 PM              6 test_commit.txt
+
+
+PS C:\dev\diamond_jack> cd ..
+PS C:\dev> ls
+
+
+    Directory: C:\dev
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/30/2024   8:37 PM                diamond_jack
+d-----          6/7/2024   4:00 PM                test
+-a----          7/1/2024   5:16 PM            206 github-recovery-codes.txt
+-a----          6/3/2024   9:16 PM           1674 tungsten-sumac.pem
+-a----          6/4/2024   9:28 PM           1462 tungsten-sumac.ppk
+
+
+PS C:\dev> openssl genrsa -out jira_privatekey.pem 1024
+openssl : The term 'openssl' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ openssl genrsa -out jira_privatekey.pem 1024
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (openssl:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+openssl : The term 'openssl' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ openssl genrsa -out jira_privatekey.pem 1024
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (openssl:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+

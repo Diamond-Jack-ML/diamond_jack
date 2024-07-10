@@ -1,13 +1,13 @@
 WITH CommentRank AS (
   SELECT        
-    m.channel_id,        
-    m.timestamp AS comment_created,        
+    m.message_channel_id AS channel_id,        
+    m.ts AS comment_created,        
     FORMAT(            
-      'Message %d\nTimestamp : %s\nSent By : %s (%s)\n%s\n%s\n%s\n',            
-      ROW_NUMBER() OVER(PARTITION BY m.channel_id ORDER BY m.timestamp),            
-      CAST(m.timestamp AS VARCHAR),            
+      'Message %s\nTimestamp : %s\nSent By : %s (%s)\n%s\n%s\n%s\n',            
+      ROW_NUMBER() OVER(PARTITION BY m.message_channel_id ORDER BY m.ts),            
+      CAST(m.ts AS VARCHAR),            
       u.name,            
-      u.email,            
+      u.profile_email,            
       '-------------------------',            
       m.text,            
       '-------------------------'        
@@ -21,7 +21,7 @@ SELECT
   c.id as channel_id,    
   c.name as channel_name,    
   FORMAT(        
-    '\nChannel ID : %d\nChannel Name : %s\n\n%s',        
+    '\nChannel ID : %s\nChannel Name : %s\n\n%s',        
     c.id,        
     c.name,        
     LISTAGG(cr.formatted_comment, '\n') WITHIN GROUP (ORDER BY cr.comment_created)    

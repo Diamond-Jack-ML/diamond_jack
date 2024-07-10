@@ -1,0 +1,137 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240709164454
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\thelo\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+Process ID: 14004
+PSVersion: 5.1.22621.3672
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.3672
+BuildVersion: 10.0.22621.3672
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240709_164454.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                ...
+Shell session setup complete for session 20240709_164454
+
+
+PS>try { . "c:\Users\thelo\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+]633;A]633;P;Cwd=C:\x5cdevPS C:\dev> ]633;P;Prompt=PS C:\x5cdev> ]633;B
+PS>cd diamond_jack/rag_system
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_systemPS C:\dev\diamond_jack\rag_system> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system> ]633;B
+PS>ls
+
+
+    Directory: C:\dev\diamond_jack\rag_system
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          7/9/2024   4:37 PM              0 load_vec_db.py
+-a----          7/9/2024  11:22 AM              0 query.sql
+-a----          7/9/2024   1:04 PM           1075 request_schemas.py
+-a----          7/8/2024   2:04 PM             94 requirements.txt
+-a----          7/9/2024   1:05 PM          18335 schema_info.json
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_systemPS C:\dev\diamond_jack\rag_system> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system> ]633;B
+PS>python request_schemas.py
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_systemPS C:\dev\diamond_jack\rag_system> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system> ]633;B
+PS>pip install requests
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_systemPS C:\dev\diamond_jack\rag_system> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system> ]633;B
+PS>pip install json
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_systemPS C:\dev\diamond_jack\rag_system> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system> ]633;B
+PS>python request_schemas.py
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_systemPS C:\dev\diamond_jack\rag_system> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system> ]633;B
+PS>python request_schemas.py
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_systemPS C:\dev\diamond_jack\rag_system> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system> ]633;B
+PS>python request_schemas.py
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_systemPS C:\dev\diamond_jack\rag_system> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system> ]633;B
+PS>python request_schemas.py
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_systemPS C:\dev\diamond_jack\rag_system> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system> ]633;B
+PS>python
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_systemPS C:\dev\diamond_jack\rag_system> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system> ]633;B
+PS>rm -r ragenv
+rm : Cannot find path 'C:\dev\diamond_jack\rag_system\ragenv' because it does not exist.
+At line:1 char:1
++ rm -r ragenv
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\dev\diamond_jack\rag_system\ragenv:String) [Remove-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+rm : Cannot find path 'C:\dev\diamond_jack\rag_system\ragenv' because it does not exist.
+At line:1 char:1
++ rm -r ragenv
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\dev\diamond_jack\rag_system\ragenv:String) [Remove-Item], ItemNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_systemPS C:\dev\diamond_jack\rag_system> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system> ]633;B
+PS>cd ..
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>rm -r ragenv
+rm : Cannot find path 'C:\dev\diamond_jack\ragenv' because it does not exist.
+At line:1 char:1
++ rm -r ragenv
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\dev\diamond_jack\ragenv:String) [Remove-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+rm : Cannot find path 'C:\dev\diamond_jack\ragenv' because it does not exist.
+At line:1 char:1
++ rm -r ragenv
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\dev\diamond_jack\ragenv:String) [Remove-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>ls
+
+
+    Directory: C:\dev\diamond_jack
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/30/2024   8:37 PM                docs
+d-----         6/30/2024   8:37 PM                frontend
+d-----         6/10/2024   7:44 PM                jira
+d-----          7/9/2024   4:44 PM                logs
+d-----          7/9/2024   3:59 PM                newenv
+d-----          7/9/2024   4:52 PM                rag_system
+d-----         6/30/2024   8:37 PM                scripts
+d-----         6/30/2024   8:37 PM                src
+d-----         6/23/2024   1:54 AM                tests
+d-----         6/23/2024   1:54 AM                ~
+-a----         6/30/2024   8:41 PM           3269 .gitignore
+-a----          6/4/2024  11:46 PM              8 .python-version
+-a----         6/12/2024  12:11 PM           2873 hooks_debug.log
+-a----         6/23/2024   1:54 AM            646 package.json
+-a----          6/4/2024   4:03 PM             13 README.md
+-a----          7/9/2024   1:20 PM            147 requirements.txt
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B
+PS>rm -r newenv
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jackPS C:\dev\diamond_jack> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack> ]633;B

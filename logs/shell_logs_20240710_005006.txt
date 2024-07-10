@@ -1,0 +1,74 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240710005006
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 5656
+PSVersion: 5.1.22621.3672
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.3672
+BuildVersion: 10.0.22621.3672
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240710_005006.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                ...
+Shell session setup complete for session 20240710_005006
+
+
+PS C:\dev> pip cache dir
+c:\users\thelo\appdata\local\pip\cache
+PS C:\dev> pip cache purge
+Files removed: 1660
+PS C:\dev> cd diamond_jack
+PS C:\dev\diamond_jack> rm -r newenv
+PS C:\dev\diamond_jack> python -m venv ragenv
+
+PS C:\dev\diamond_jack> ./ragenv/Scripts/activate
+PS C:\dev\diamond_jack>
+(ragenv) pip install -r requirements.txt
+  File "C:\Users\thelo\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[notice] A new release of pip is available: 24.0 -> 24.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+PS C:\dev\diamond_jack>
+(ragenv) python.exe -m pip install --upgrade pip
+
+PS C:\dev\diamond_jack>
+(ragenv) rm -r ragenv
+PS C:\dev\diamond_jack>
+(ragenv) clear
+PS C:\dev\diamond_jack>
+(ragenv) .$PROFILE
+Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240710_005332.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+2      PowerShell.E...                 NotStarted    False                                ...
+Shell session setup complete for session 20240710_005332
+
+
+PS C:\dev>
+(ragenv) clear
+PS C:\dev>
+(ragenv) cd diamond_jack
+PS C:\dev\diamond_jack>
+(ragenv) python -m venv newenv
+
+PS C:\dev\diamond_jack>
+(ragenv) deactivate
+PS C:\dev\diamond_jack> rm -r newenv
+PS C:\dev\diamond_jack> python -m venv newenv
+
+PS C:\dev\diamond_jack> ./newenv/Scripts/activate
+PS C:\dev\diamond_jack>

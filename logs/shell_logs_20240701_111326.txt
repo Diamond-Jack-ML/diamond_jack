@@ -1,0 +1,74 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240701111326
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 7248
+PSVersion: 5.1.22621.3672
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.3672
+BuildVersion: 10.0.22621.3672
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240701_111326.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                ...
+Shell session setup complete for session 20240701_111326
+
+
+PS C:\dev> GET-CimInstance -query "SELECT * from Win32_DiskDrive"
+
+DeviceID           Caption                       Partitions Size         Model
+--------           -------                       ---------- ----         -----
+\\.\PHYSICALDRIVE0 WD PC SN740 SDDPNQD-256G-2006 4          256052966400 WD PC SN740 SDDPNQD-256G-2006
+
+
+PS C:\dev> wsl --mount \\.\PHYSICALDRIVE0 --bare
+The process cannot access the file because it is being used by another process.
+Error code: Wsl/Service/AttachDisk/ERROR_SHARING_VIOLATION
+PS C:\dev> Get-CimInstance -query "ASSOCIATORS OF {Win32_DiskDrive.DeviceID='\\\\.\\PHYSICALDRIVE0'} WHERE AssocClass=Win32_DiskDriveToDiskPartition"
+Get-CimInstance : Not found 
+At line:1 char:1
++ Get-CimInstance -query "ASSOCIATORS OF {Win32_DiskDrive.DeviceID='\\\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (:) [Get-CimInstance], CimException
+    + FullyQualifiedErrorId : HRESULT 0x80041002,Microsoft.Management.Infrastructure.CimCmdlets.GetCimInstanceCommand
+Get-CimInstance : Not found
+At line:1 char:1
++ Get-CimInstance -query "ASSOCIATORS OF {Win32_DiskDrive.DeviceID='\\\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (:) [Get-CimInstance], CimException
+    + FullyQualifiedErrorId : HRESULT 0x80041002,Microsoft.Management.Infrastructure.CimCmdlets.GetCimInstanceCommand
+
+PS C:\dev> clear
+PS C:\dev> Get-CimInstance -query "ASSOCIATORS OF {Win32_DiskDrive.DeviceID='\\.\PHYSICALDRIVE0'} WHERE AssocClass=Win32_DiskDriveToDiskPartition"
+
+Name             NumberOfBlocks       BootPartition        PrimaryPartition     Size                Index
+----             --------------       -------------        ----------------     ----                -----
+Disk #0, Part... 532480               True                 True                 272629760           0
+Disk #0, Part... 317128704            False                True                 162369896448        1
+Disk #0, Part... 1433600              False                False                734003200           2
+Disk #0, Part... 180975616            False                False                92659515392         3
+
+
+PS C:\dev> GET-CimInstance -query "SELECT * from Win32_DiskDrive"
+
+DeviceID           Caption                       Partitions Size         Model
+--------           -------                       ---------- ----         -----
+\\.\PHYSICALDRIVE0 WD PC SN740 SDDPNQD-256G-2006 4          256052966400 WD PC SN740 SDDPNQD-256G-2006
+
+
+PS C:\dev> wsl --mount \\.\PHYSICALDRIVE0 --partition 4 --type ext4
+The process cannot access the file because it is being used by another process.
+Error code: Wsl/Service/AttachDisk/ERROR_SHARING_VIOLATION
+PS C:\dev> wsl --mount \\.\PHYSICALDRIVE0 --partition 5 --type ext4
+The process cannot access the file because it is being used by another process.
+Error code: Wsl/Service/AttachDisk/ERROR_SHARING_VIOLATION

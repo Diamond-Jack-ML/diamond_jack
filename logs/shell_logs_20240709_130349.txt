@@ -1,0 +1,32 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240709130349
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\thelo\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+Process ID: 5344
+PSVersion: 5.1.22621.3672
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.3672
+BuildVersion: 10.0.22621.3672
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240709_130349.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location
+--     ----            -------------   -----         -----------     --------
+1      PowerShell.E...                 NotStarted    False
+Shell session setup complete for session 20240709_130349
+
+
+PS>try { . "c:\Users\thelo\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+]633;A]633;P;Cwd=C:\x5cdevPS C:\dev> ]633;P;Prompt=PS C:\x5cdev> ]633;B

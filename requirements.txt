@@ -3,3 +3,11 @@ openai==0.27.0
 flask-cors
 npm
 jira
+boto3
+chromadb
+langchain
+langchain-community
+langchain-openai
+openai
+streamlit
+tiktoken

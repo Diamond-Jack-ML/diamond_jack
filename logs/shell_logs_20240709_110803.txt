@@ -17,3 +17,16 @@ PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
 **********************
 Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240709_110803.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location
+--     ----            -------------   -----         -----------     --------
+1      PowerShell.E...                 NotStarted    False
+Shell session setup complete for session 20240709_110803
+
+
+PS>try { . "c:\Users\thelo\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+]633;A]633;P;Cwd=C:\x5cdevPS C:\dev> ]633;P;Prompt=PS C:\x5cdev> ]633;B
