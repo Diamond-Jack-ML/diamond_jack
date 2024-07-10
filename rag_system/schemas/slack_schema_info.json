@@ -1,0 +1,303 @@
+{
+    "code": "Success",
+    "data": {
+        "enable_new_by_default": true,
+        "schemas": {
+            "slack": {
+                "name_in_destination": "slack",
+                "enabled": true,
+                "tables": {
+                    "bookmark": {
+                        "name_in_destination": "bookmark",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "channel": {
+                        "name_in_destination": "channel",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "channel_internal_team": {
+                        "name_in_destination": "channel_internal_team",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "channel_member": {
+                        "name_in_destination": "channel_member",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "channel_pending_connected_team": {
+                        "name_in_destination": "channel_pending_connected_team",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "channel_pending_shared": {
+                        "name_in_destination": "channel_pending_shared",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "channel_shared_team": {
+                        "name_in_destination": "channel_shared_team",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "chat_permalink": {
+                        "name_in_destination": "chat_permalink",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "dnd_info": {
+                        "name_in_destination": "dnd_info",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "message": {
+                        "name_in_destination": "message",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "message_attachment": {
+                        "name_in_destination": "message_attachment",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "message_block": {
+                        "name_in_destination": "message_block",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "message_block_element": {
+                        "name_in_destination": "message_block_element",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "message_file": {
+                        "name_in_destination": "message_file",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "message_reaction": {
+                        "name_in_destination": "message_reaction",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "message_reaction_user": {
+                        "name_in_destination": "message_reaction_user",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "message_reply_user": {
+                        "name_in_destination": "message_reply_user",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "pin": {
+                        "name_in_destination": "pin",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "previous_channel_name": {
+                        "name_in_destination": "previous_channel_name",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "profile_field": {
+                        "name_in_destination": "profile_field",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "profile_field_option": {
+                        "name_in_destination": "profile_field_option",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "profile_field_possible_value": {
+                        "name_in_destination": "profile_field_possible_value",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "remote_file": {
+                        "name_in_destination": "remote_file",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "remote_file_channel": {
+                        "name_in_destination": "remote_file_channel",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "scheduled_message": {
+                        "name_in_destination": "scheduled_message",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "team_billing": {
+                        "name_in_destination": "team_billing",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "team_preference": {
+                        "name_in_destination": "team_preference",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "user_group": {
+                        "name_in_destination": "user_group",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "user_group_prefs_channel": {
+                        "name_in_destination": "user_group_prefs_channel",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "user_group_prefs_group": {
+                        "name_in_destination": "user_group_prefs_group",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "user_group_user": {
+                        "name_in_destination": "user_group_user",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "users": {
+                        "name_in_destination": "users",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    }
+                }
+            }
+        },
+        "schema_change_handling": "ALLOW_ALL"
+    }
+}

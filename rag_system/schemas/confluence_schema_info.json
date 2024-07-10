@@ -1,0 +1,384 @@
+{
+    "code": "Success",
+    "data": {
+        "enable_new_by_default": true,
+        "schemas": {
+            "confluence": {
+                "name_in_destination": "confluence",
+                "enabled": true,
+                "tables": {
+                    "attachment": {
+                        "name_in_destination": "attachment",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "attachment_content_property": {
+                        "name_in_destination": "attachment_content_property",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "attachment_label": {
+                        "name_in_destination": "attachment_label",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "attachment_version": {
+                        "name_in_destination": "attachment_version",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "attachment_version_detail": {
+                        "name_in_destination": "attachment_version_detail",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "blog_post": {
+                        "name_in_destination": "blog_post",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "blog_post_content_property": {
+                        "name_in_destination": "blog_post_content_property",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "blog_post_label": {
+                        "name_in_destination": "blog_post_label",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "blog_post_version": {
+                        "name_in_destination": "blog_post_version",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "blog_post_version_detail": {
+                        "name_in_destination": "blog_post_version_detail",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "child_custom_content": {
+                        "name_in_destination": "child_custom_content",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "child_page": {
+                        "name_in_destination": "child_page",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "custom_content": {
+                        "name_in_destination": "custom_content",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "custom_content_label": {
+                        "name_in_destination": "custom_content_label",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "custom_content_property": {
+                        "name_in_destination": "custom_content_property",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "custom_content_version": {
+                        "name_in_destination": "custom_content_version",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "custom_content_version_detail": {
+                        "name_in_destination": "custom_content_version_detail",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "footer_comment": {
+                        "name_in_destination": "footer_comment",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "footer_comment_version": {
+                        "name_in_destination": "footer_comment_version",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "footer_comment_version_detail": {
+                        "name_in_destination": "footer_comment_version_detail",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "inline_comment": {
+                        "name_in_destination": "inline_comment",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "inline_comment_version": {
+                        "name_in_destination": "inline_comment_version",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "inline_comment_version_detail": {
+                        "name_in_destination": "inline_comment_version_detail",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "label": {
+                        "name_in_destination": "label",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "page": {
+                        "name_in_destination": "page",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "page_content_property": {
+                        "name_in_destination": "page_content_property",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "page_label": {
+                        "name_in_destination": "page_label",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "page_version": {
+                        "name_in_destination": "page_version",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "page_version_detail": {
+                        "name_in_destination": "page_version_detail",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "permitted_attachment_operation": {
+                        "name_in_destination": "permitted_attachment_operation",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "permitted_blog_post_operation": {
+                        "name_in_destination": "permitted_blog_post_operation",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "permitted_custom_content_operation": {
+                        "name_in_destination": "permitted_custom_content_operation",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "permitted_footer_comment_operation": {
+                        "name_in_destination": "permitted_footer_comment_operation",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "permitted_inline_comment_operation": {
+                        "name_in_destination": "permitted_inline_comment_operation",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "permitted_page_operation": {
+                        "name_in_destination": "permitted_page_operation",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "permitted_space_operation": {
+                        "name_in_destination": "permitted_space_operation",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "space": {
+                        "name_in_destination": "space",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "space_label": {
+                        "name_in_destination": "space_label",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "space_permission": {
+                        "name_in_destination": "space_permission",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "space_property": {
+                        "name_in_destination": "space_property",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "task": {
+                        "name_in_destination": "task",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    }
+                }
+            }
+        },
+        "schema_change_handling": "ALLOW_ALL"
+    }
+}

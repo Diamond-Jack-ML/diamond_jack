@@ -1,0 +1,471 @@
+{
+    "code": "Success",
+    "data": {
+        "enable_new_by_default": true,
+        "schemas": {
+            "github": {
+                "name_in_destination": "github",
+                "enabled": true,
+                "tables": {
+                    "asset": {
+                        "name_in_destination": "asset",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "branch_commit_relation": {
+                        "name_in_destination": "branch_commit_relation",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "card": {
+                        "name_in_destination": "card",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": true
+                        },
+                        "supports_columns_config": false
+                    },
+                    "column": {
+                        "name_in_destination": "column",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": true
+                        },
+                        "supports_columns_config": false
+                    },
+                    "commit": {
+                        "name_in_destination": "commit",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "commit_file": {
+                        "name_in_destination": "commit_file",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "commit_parent": {
+                        "name_in_destination": "commit_parent",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "commit_pull_request": {
+                        "name_in_destination": "commit_pull_request",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "deployment": {
+                        "name_in_destination": "deployment",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": true
+                        },
+                        "supports_columns_config": false
+                    },
+                    "deployment_status": {
+                        "name_in_destination": "deployment_status",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "issue": {
+                        "name_in_destination": "issue",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "issue_assignee": {
+                        "name_in_destination": "issue_assignee",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "issue_assignee_history": {
+                        "name_in_destination": "issue_assignee_history",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "issue_closed_history": {
+                        "name_in_destination": "issue_closed_history",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "issue_comment": {
+                        "name_in_destination": "issue_comment",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "issue_label": {
+                        "name_in_destination": "issue_label",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "issue_label_history": {
+                        "name_in_destination": "issue_label_history",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "issue_locked_history": {
+                        "name_in_destination": "issue_locked_history",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "issue_mention": {
+                        "name_in_destination": "issue_mention",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "issue_merged": {
+                        "name_in_destination": "issue_merged",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "issue_milestone_history": {
+                        "name_in_destination": "issue_milestone_history",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "issue_project_history": {
+                        "name_in_destination": "issue_project_history",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": true
+                        },
+                        "supports_columns_config": false
+                    },
+                    "issue_referenced": {
+                        "name_in_destination": "issue_referenced",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "issue_renamed": {
+                        "name_in_destination": "issue_renamed",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "label": {
+                        "name_in_destination": "label",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "milestone": {
+                        "name_in_destination": "milestone",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "project": {
+                        "name_in_destination": "project",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": true
+                        },
+                        "supports_columns_config": false
+                    },
+                    "pull_request": {
+                        "name_in_destination": "pull_request",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "pull_request_ready_for_review_history": {
+                        "name_in_destination": "pull_request_ready_for_review_history",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "pull_request_review": {
+                        "name_in_destination": "pull_request_review",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "pull_request_review_comments": {
+                        "name_in_destination": "pull_request_review_comments",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "pull_request_review_dismissed": {
+                        "name_in_destination": "pull_request_review_dismissed",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "release": {
+                        "name_in_destination": "release",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": true
+                        },
+                        "supports_columns_config": false
+                    },
+                    "repo_team": {
+                        "name_in_destination": "repo_team",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": true
+                        },
+                        "supports_columns_config": true
+                    },
+                    "repository": {
+                        "name_in_destination": "repository",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "repository_topic": {
+                        "name_in_destination": "repository_topic",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": true
+                        },
+                        "supports_columns_config": true
+                    },
+                    "requested_reviewer_history": {
+                        "name_in_destination": "requested_reviewer_history",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "security_advisory": {
+                        "name_in_destination": "security_advisory",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "security_advisory_cwe": {
+                        "name_in_destination": "security_advisory_cwe",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "security_advisory_vulnerability": {
+                        "name_in_destination": "security_advisory_vulnerability",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "security_alert": {
+                        "name_in_destination": "security_alert",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": true
+                        },
+                        "supports_columns_config": true
+                    },
+                    "security_cwe": {
+                        "name_in_destination": "security_cwe",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "security_reference": {
+                        "name_in_destination": "security_reference",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "security_vulnerability": {
+                        "name_in_destination": "security_vulnerability",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "stargazer": {
+                        "name_in_destination": "stargazer",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "team": {
+                        "name_in_destination": "team",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": true
+                        },
+                        "supports_columns_config": false
+                    },
+                    "team_membership": {
+                        "name_in_destination": "team_membership",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": true
+                        },
+                        "supports_columns_config": false
+                    },
+                    "user": {
+                        "name_in_destination": "user",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "user_email": {
+                        "name_in_destination": "user_email",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "SYSTEM_TABLE"
+                        },
+                        "supports_columns_config": true
+                    },
+                    "workflow": {
+                        "name_in_destination": "workflow",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": true
+                        },
+                        "supports_columns_config": false
+                    },
+                    "workflow_run": {
+                        "name_in_destination": "workflow_run",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    },
+                    "workflow_run_pull_request": {
+                        "name_in_destination": "workflow_run_pull_request",
+                        "enabled": true,
+                        "enabled_patch_settings": {
+                            "allowed": false,
+                            "reason_code": "NOT_SELECTABLE_CHILD_TABLE"
+                        },
+                        "supports_columns_config": false
+                    }
+                }
+            }
+        },
+        "schema_change_handling": "ALLOW_ALL"
+    }
+}
