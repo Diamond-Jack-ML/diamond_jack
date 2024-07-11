@@ -1,0 +1,18 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240711195328
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: powershell.exe -c Invoke-WebRequest -Uri https://slackb.com/error -Method POST -Headers @{'X-Slack-Ses-Id' = 'b4ad8ab6-9f83-45e5-b560-887921571837'; 'Content-Type' = 'application/json'; 'User-Agent' = 'Mozilla/5.0 (Windows NT 10.0.22631; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Slack/4.39.89 Chrome/126.0.6478.61 Electron/31.0.2 Safari/537.36 OS_Product/Workstation Servicing_Channel/SAC Sonic Slack_SSB/4.39.89'; 'Content-Length' = '55'; } -Body '{"label":"slack_com","reason":"SSB connection failure"}' -UseBasicParsing | Select-Object -Property StatusCode,Content | ConvertTo-Json
+Process ID: 14572
+PSVersion: 5.1.22621.3880
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.3880
+BuildVersion: 10.0.22621.3880
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
