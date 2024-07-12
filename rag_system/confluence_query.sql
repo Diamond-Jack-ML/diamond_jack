@@ -3,21 +3,16 @@ WITH CommentRank AS (
     c.page_id,        
     c.created AS comment_created,        
     FORMAT(            
-      'Page Comment %d\nCreated On : %s\nCreated By : %s (%s)\n%s\n%s\n%s\n',            
+      'Page Comment %d\nCreated On : %s\nCreated By : %s\n%s\n%s\n%s\n',            
       ROW_NUMBER() OVER(PARTITION BY c.page_id ORDER BY c.created),            
       CAST(c.created AS VARCHAR),            
-      u.name,            
-      u.email,            
+      c.author,            
       '-------------------------',            
       c.body,            
       '-------------------------'        
     ) AS formatted_comment    
   FROM        
-    confluence.footer_comment c    
-  JOIN        
-    confluence.footer_comment_version cv ON c.id = cv.footer_comment_id
-  JOIN
-    confluence.user u ON cv.author_id = u.id
+    confluence.footer_comment c
 )
 SELECT    
   p.id AS page_id,    
