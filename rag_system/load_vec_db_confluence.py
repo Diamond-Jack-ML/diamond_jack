@@ -8,7 +8,7 @@ os.environ['OPENAI_API_KEY'] = os.getenv('OPENAI_API_KEY')  # Make sure your env
 
 # Read the query from the SQL file
 with open('confluence_query.sql', 'r') as q:
-    slack_query = q.read()
+    confluence_query = q.read()
 
 # Load Confluence data
 confluence_docs = AthenaLoader(
@@ -25,4 +25,3 @@ all_docs = confluence_docs
 # Vectorize and load into Chroma
 embeddings = OpenAIEmbeddings()
 vecdb = Chroma.from_documents(all_docs, embeddings, persist_directory="./confluence_db")
-vecdb.persist()

@@ -13,18 +13,23 @@ WITH CommentRank AS (
       '-------------------------'        
     ) AS formatted_comment    
   FROM        
-    confluence.comment c    
+    confluence.footer_comment c    
   JOIN        
-    confluence.user u ON c.author_id = u.id
+    confluence.footer_comment_version cv ON c.id = cv.footer_comment_id
+  JOIN
+    confluence.user u ON cv.author_id = u.id
 )
 SELECT    
-  p.id as page_id,    
-  p.title as page_title,    
-  p.created as page_created,    
+  p.id AS page_id,    
+  p.title AS page_title,    
+  p.created_at AS page_created,    
+  pv.page_body AS page_content,
+  s.id AS space_id,
+  s.name AS space_name,
   FORMAT(        
     '\nPage ID : %d\nCreated On : %s\nTitle : %s\n\n%s',        
     p.id,        
-    CAST(p.created AS VARCHAR),        
+    CAST(p.created_at AS VARCHAR),        
     p.title,        
     LISTAGG(cr.formatted_comment, '\n') WITHIN GROUP (ORDER BY cr.comment_created)    
   ) AS page_details
@@ -32,5 +37,11 @@ FROM
   confluence.page p
 LEFT JOIN    
   CommentRank cr ON p.id = cr.page_id
+JOIN 
+  confluence.page_version pv ON p.id = pv.page_id
+JOIN 
+  confluence.space s ON p.space_id = s.id
+WHERE 
+  p.status = 'current'
 GROUP BY    
-  p.id, p.title, p.created;
+  p.id, p.title, p.created_at, pv.page_body, s.id, s.name;

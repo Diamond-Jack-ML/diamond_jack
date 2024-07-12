@@ -25,4 +25,3 @@ all_docs = slack_docs
 # Vectorize and load into Chroma
 embeddings = OpenAIEmbeddings()
 vecdb = Chroma.from_documents(all_docs, embeddings, persist_directory="./slack_db")
-vecdb.persist()
