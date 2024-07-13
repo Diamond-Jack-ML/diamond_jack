@@ -1,0 +1,137 @@
+General Requirements
+
+    What is the primary objective of the system?
+To act as the main system to integrate all aspects of the business. 
+It should be able to integrate new software and handle all aspects of development, logging, education, reflection, etc.
+
+
+
+    Who are the main users of the system?
+    
+Company employees and myself.
+
+
+
+    What are the key functionalities the system must have?
+    
+It must be able to access all data, including configuration, state and content, of all other software and systems used by the company.
+It should be able to reference an ontology for the business and maintain an awareness of each component of the business using any number of model views.
+
+It should maintain an identity "monad" for the business that any activity can be wrapped in to translate the core values and identity of the business into a specific implementation in any given tool or software. For example, it should be able to create Confluence blueprints for the business so that each space is equipped with templates and consistent design elements that accurately reflects the business identity.
+
+
+
+Integration and Data Sources
+
+    Which tools and platforms need to be integrated (e.g., Slack, Jira, Confluence, GitHub)?
+    
+    Slack, Jira, Confluence, GitHub, but any tool should be able to be used and integrated into the system along with all the use data from that tool.
+    
+    What type of data needs to be collected from each platform?
+    How often should the data be updated or synchronized?
+    
+There should be a real-time connection to all data available from each tool.
+
+User Interaction
+
+    What types of interactions will users have with the system?
+    
+They will receive instruction on how to use each tool and receive instructions for development workflows.
+    
+    
+    
+    
+    Do you need a web interface, command-line interface, or both?
+    What are the primary actions users should be able to perform through the interface?
+    
+    I need the entire system to be integrated into Ubuntu so that agent responses can be passed to the command-line if needed, but the entire system will exist within a Ubuntu instance. The UI will be web-based using React and the backend will be Flask and the entire app will sit within a Ubuntu instance, which will also be accessible by a "master agent". Ask me more questions to get more specific on what this interface will look like.
+
+One agent should have the ability to write new dashboards using Dash so it should have access to the linux environment.
+
+Logging and Monitoring
+
+    What specific events and actions need to be logged?
+    
+Anything that will make the job of the agents easier in determining the current position in the conceptual model and development.
+
+    How detailed should the logging be (e.g., every action, summarized actions)?
+    
+It should be enough to maintain an accurate picture of the state of the system so that it can be understood holistically.
+
+    Where should the logs be stored and how long should they be retained?
+    
+In the logs folder of the git repository.
+
+Security and Access Control
+
+    What are the security requirements for the system?
+    Who should have access to different parts of the system?
+    Are there any compliance requirements (e.g., GDPR)?
+    
+Create all security features appropriate for an enterprise-grade system.
+
+Performance and Scalability
+
+    What are the performance requirements (e.g., response time, throughput)?
+    
+    It should be practical to use for customer support agents.
+    
+    How should the system handle increasing amounts of data and users?
+    
+    It should scale up and down efficiently according to industry best practices.
+    
+    Are there any specific hardware or software constraints?
+We'll be using free versions of most software at first.
+
+Reporting and Analytics
+
+    What types of reports and analytics are needed?
+    
+    What kinds would you suggest?
+    How should the system present these reports (e.g., dashboards, downloadable files)?
+    
+    Dashboards, downloadable files.
+    Who will be using these reports and for what purpose?
+
+Sales agents, customer support agents, engineers for sales, support and debugging. Ideally any report should be able to be generated using the same functionality that generates the custom dashboards. 
+
+
+Maintenance and Support
+
+    What is the expected maintenance routine for the system?
+    
+Maintain a working version of the system. Each action performed in the system represents a git commit, so that if any action breaks something, you can revert to the previous commit (action).
+
+This storage will last a day with storages a week before having one week gaps in the storage to save space.
+
+    How will updates and patches be handled?
+    
+Use the information I just gave you to implement that.
+    What level of support will be provided to users (e.g., helpdesk, self-service)?
+
+An autonomous AI agent will handle support.
+Additional Features
+
+    Are there any additional features that would be nice to have?
+    
+    Can you think of any?
+    What are the future expansion plans for the system?
+    
+    It will be based on the functional programming paradigm and use intuitions from formal language theory to provide a form of program correctness verification. This combines the rigor of a formal method with the intelligence and dynamism of an autonomous agent to create alignment.
+
+Specific Questions for Current Project State
+
+    What are the existing functionalities and how are they currently implemented?
+    
+    Each piece of software is being used individually.
+    
+    What are the pain points or limitations of the current system?
+    
+    The recommendations of the system should first come from a holistic awareness of the business so that it can be clearly seen what role the implementation has in the business and where it exists in the C4 architecture model. It should also contain the identity of the business and be wrapped in the identity "monad" previously mentioned.
+    
+    
+    What improvements are needed based on user feedback or performance metrics?
+    
+    What would you suggest?
+
+By answering these questions, we can create a detailed set of requirements that will guide the design and implementation of the main system.

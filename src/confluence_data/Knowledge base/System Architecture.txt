@@ -1,0 +1,27 @@
+<p /><p /><p><em>Query</em>----&gt;<br /><br />a.)<br />b.)<br />c.)<br /><br />Point and Click bullets or numbered lists with automated query &ldquo;Can you walk me through this one in detail?&rdquo; or &ldquo;Can you explain this one fully?&rdquo;<br /><br />Maintain plain text interface, using ChatGPT to generate command line code.</p><p /><p>For Writing Code:</p><p>1.) Check the GitHub repo<br />2.) Check repo against the conceptual model<br />3.) Suggest improvements</p><p>Workflow Outline</p><ac:structured-macro ac:name="code" ac:schema-version="1" ac:macro-id="8d4bdd82-9f02-44c6-a04b-a3b5157a7ab2"><ac:plain-text-body><![CDATA[System Initialization:
+    Steps: Get system details, store in a system details file, define project requirements, select tech stack, speculate future features, draft conceptual data model, generate file structure, populate folders with .gitkeep files, create virtual environment, install dependencies, perform Git operations.
+
+State Capture:
+    Logs: Capture shell session and Git log at each commit.
+    Storage: Logs should be formatted in JSON and stored in a logs directory.
+
+Real-time Access:
+    Access: Use the public repository link for real-time access to the repository.
+    Tools: Perform Git actions through the shell.
+
+Shell Scripting and Commands:
+    Commands: Suggest appropriate Git and shell commands based on prompts.
+    Logging: Store commands in a shell and Git console, determine appropriate Git actions at each interaction.
+
+Educational Content:
+    Generation: Explain actions, software, and pre-requisites; integrate explanations within code comments and separate documentation.
+
+Requirements Management:
+    Updates: Scan logs for added software, update requirements.txt at each commit.
+
+AI Integration:
+    Shell Session: Suggest shell commands based on prompts, log to the shell console.
+    Development Workflow: Integrate GPT outputs into the workflow as needed.
+    
+Documentation:
+    Generate documentation for each function, shell script and piece of code.]]></ac:plain-text-body></ac:structured-macro><p /><p><u>ChatGPT Custom Instructions</u></p><p>Before each response:</p><p>1.) Check the GitHub repo at <a href="https://github.com/Diamond-Jack-ML/diamond_jack" data-card-appearance="inline">https://github.com/Diamond-Jack-ML/diamond_jack</a> <br />2.) Check the current Jira task marked &quot;In Progress&quot; at <a href="https://github.com/Diamond-Jack-ML/diamond_jack/blob/main/src/api/jira_data.txt.">https://github.com/Diamond-Jack-ML/diamond_jack/blob/main/src/api/jira_data.txt.</a>  These issues already exist in Jira and are ready to proceed with.<br />3.) Match Jira task with component of conceptual data model if available<br />4.) Write code or complete task</p>

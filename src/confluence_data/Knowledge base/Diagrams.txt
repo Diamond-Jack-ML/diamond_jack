@@ -1,0 +1,1 @@
+<p>Diagrams will be generated in code using GPT.</p>

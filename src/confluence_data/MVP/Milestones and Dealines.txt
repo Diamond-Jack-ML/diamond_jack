@@ -1,0 +1,1 @@
+<p><strong><u>To Do:</u></strong></p><p>List out key milestones and their deadlines.</p><h3><strong><u>Milestones:</u></strong></h3><ul><li><p>Define services (6/12/24)</p></li><li><p>Develop sales script (6/13/24)</p></li><li><p>Create landing page (6/14/24)</p></li></ul><p><time datetime="2024-06-21" /> </p><p />

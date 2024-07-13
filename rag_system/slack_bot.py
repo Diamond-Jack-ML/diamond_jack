@@ -5,18 +5,14 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
 import streamlit as st
-import os
-
-# Ensure the OpenAI API key is set
-openai_api_key = os.getenv('OPENAI_API_KEY')
 
 # Declare the foundational model and prompt template
 template = """
-You are an assistant tasked with answering questions based on Jira issues.
-Refer to the following issues to provide your response.
+You are an assistant tasked with answering questions based on Slack chat threads.
+Refer to the following chat threads to provide your response.
 Keep your answer concise, using a maximum of three sentences.
 Question: {question}
-Issues: {issues}
+Chat Threads: {chat_threads}
 Answer:
 """
 prompt = ChatPromptTemplate.from_template(template)
@@ -24,18 +20,16 @@ llm = ChatOpenAI(model="gpt-4-0125-preview")
 
 # Function to get answer
 def get_answer(question):
-    db = Chroma(persist_directory="./slack_db", embedding_function=OpenAIEmbeddings(openai_api_key=openai_api_key))
-    retrieved_docs = db.as_retriever()(question)
-    print("Retrieved documents:", retrieved_docs)  # Debugging step
-    inputs = {"issues": retrieved_docs, "question": RunnablePassthrough()}
+    db = Chroma(persist_directory="./slack_db", embedding_function=OpenAIEmbeddings())
+    inputs = {"chat_threads": db.as_retriever(), "question": RunnablePassthrough()}
     rag_chain = (inputs | prompt | llm | StrOutputParser())
     return rag_chain.invoke(question)
 
 # Streamlit UI
-st.title("Jira - Q&A Bot")
+st.title("Slack - Q&A Bot")
 
 with st.form("my_form"):
-    sample_question = "What are the top issues in the project?"
+    sample_question = "What is the most discussed topic on the channels?"
     question = st.text_area("Enter text:", sample_question)
     submitted = st.form_submit_button("Submit")
     if submitted:
