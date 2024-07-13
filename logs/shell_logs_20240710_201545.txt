@@ -1,0 +1,265 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240710201545
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 13572
+PSVersion: 5.1.22621.3672
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.3672
+BuildVersion: 10.0.22621.3672
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240710_201545.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                ...
+Shell session setup complete for session 20240710_201545
+
+
+PS C:\dev> cd diamond_jack
+PS C:\dev\diamond_jack> git reset --hard HEAD
+HEAD is now at 4d3b677b Update shell logs - 2024-07-10 20:06:57
+PS C:\dev\diamond_jack> git reset --hard HEAD~4
+HEAD is now at 2be9530b Update shell logs - 2024-07-10 12:16:05
+PS C:\dev\diamond_jack> git reset --hard HEAD~8
+HEAD is now at 0ef75c87 Update shell logs - 2024-07-09 13:28:17
+PS C:\dev\diamond_jack> git reflog
+0f7697c6 (HEAD -> main) HEAD@{0}: commit: Update shell logs - 2024-07-10 20:16:58
+fd8731f4 HEAD@{1}: commit: Update shell logs - 2024-07-10 20:16:57
+0ef75c87 HEAD@{2}: reset: moving to HEAD~8
+2be9530b HEAD@{3}: reset: moving to HEAD~4
+4d3b677b HEAD@{4}: reset: moving to HEAD
+4d3b677b HEAD@{5}: commit: Update shell logs - 2024-07-10 20:06:57
+056ec1c2 HEAD@{6}: commit: Update shell logs - 2024-07-10 19:38:18
+e85d0c88 HEAD@{7}: commit: Working version of load_vec_db.py for Slack and bot.py for Streamlit app
+dc0d183f HEAD@{8}: commit: First commit for RAG system
+2be9530b HEAD@{9}: commit: Update shell logs - 2024-07-10 12:16:05
+a3f7bd47 HEAD@{10}: commit: Update shell logs - 2024-07-10 11:28:38
+5e98d90a HEAD@{11}: commit: Update shell logs - 2024-07-10 01:29:55
+f7d4bf74 HEAD@{12}: commit: Update shell logs - 2024-07-10 01:07:43
+01d7a4d6 HEAD@{13}: commit: Update shell logs - 2024-07-10 01:06:39
+45b94396 HEAD@{14}: commit: Update shell logs - 2024-07-09 16:00:20
+23e688cf HEAD@{15}: commit: Update shell logs - 2024-07-09 15:59:58
+f3bbfbb9 HEAD@{16}: commit: Update shell logs - 2024-07-09 15:47:25
+0ef75c87 HEAD@{17}: commit: Update shell logs - 2024-07-09 13:28:17
+1bb76260 HEAD@{18}: commit: Update shell logs - 2024-07-09 13:22:22
+d416bcdb HEAD@{19}: commit: Update shell logs - 2024-07-09 13:21:07
+aeb1f9fb HEAD@{20}: commit: Update shell logs - 2024-07-09 13:19:26
+74c53b06 HEAD@{21}: commit: Update shell logs - 2024-07-09 13:03:52
+70af4fde HEAD@{22}: commit: Update shell logs - 2024-07-09 11:56:39
+d3bf05ef HEAD@{23}: commit: Update shell logs - 2024-07-09 11:08:09
+1e3074be HEAD@{24}: commit: Update shell logs - 2024-07-08 14:04:07
+cebe206c HEAD@{25}: commit: Update shell logs - 2024-07-08 14:03:01
+958d5556 HEAD@{26}: commit: Update shell logs - 2024-07-08 14:02:59
+1ecc72c5 HEAD@{27}: commit: Update shell logs - 2024-07-04 19:14:03
+50d8f508 HEAD@{28}: commit: Update shell logs - 2024-07-01 11:11:55
+:
+0f7697c6 (HEAD -> main) HEAD@{0}: commit: Update shell logs - 2024-07-10 20:16:58
+fd8731f4 HEAD@{1}: commit: Update shell logs - 2024-07-10 20:16:57
+0ef75c87 HEAD@{2}: reset: moving to HEAD~8
+2be9530b HEAD@{3}: reset: moving to HEAD~4
+4d3b677b HEAD@{4}: reset: moving to HEAD
+4d3b677b HEAD@{5}: commit: Update shell logs - 2024-07-10 20:06:57
+056ec1c2 HEAD@{6}: commit: Update shell logs - 2024-07-10 19:38:18
+e85d0c88 HEAD@{7}: commit: Working version of load_vec_db.py for Slack and bot.py for Streamlit app
+dc0d183f HEAD@{8}: commit: First commit for RAG system
+2be9530b HEAD@{9}: commit: Update shell logs - 2024-07-10 12:16:05
+a3f7bd47 HEAD@{10}: commit: Update shell logs - 2024-07-10 11:28:38
+5e98d90a HEAD@{11}: commit: Update shell logs - 2024-07-10 01:29:55
+f7d4bf74 HEAD@{12}: commit: Update shell logs - 2024-07-10 01:07:43
+01d7a4d6 HEAD@{13}: commit: Update shell logs - 2024-07-10 01:06:39
+45b94396 HEAD@{14}: commit: Update shell logs - 2024-07-09 16:00:20
+23e688cf HEAD@{15}: commit: Update shell logs - 2024-07-09 15:59:58
+f3bbfbb9 HEAD@{16}: commit: Update shell logs - 2024-07-09 15:47:25
+0ef75c87 HEAD@{17}: commit: Update shell logs - 2024-07-09 13:28:17
+1bb76260 HEAD@{18}: commit: Update shell logs - 2024-07-09 13:22:22
+d416bcdb HEAD@{19}: commit: Update shell logs - 2024-07-09 13:21:07
+aeb1f9fb HEAD@{20}: commit: Update shell logs - 2024-07-09 13:19:26
+74c53b06 HEAD@{21}: commit: Update shell logs - 2024-07-09 13:03:52
+70af4fde HEAD@{22}: commit: Update shell logs - 2024-07-09 11:56:39
+d3bf05ef HEAD@{23}: commit: Update shell logs - 2024-07-09 11:08:09
+1e3074be HEAD@{24}: commit: Update shell logs - 2024-07-08 14:04:07
+cebe206c HEAD@{25}: commit: Update shell logs - 2024-07-08 14:03:01
+958d5556 HEAD@{26}: commit: Update shell logs - 2024-07-08 14:02:59
+1ecc72c5 HEAD@{27}: commit: Update shell logs - 2024-07-04 19:14:03
+50d8f508 HEAD@{28}: commit: Update shell logs - 2024-07-01 11:11:55
+:
+0f7697c6 (HEAD -> main) HEAD@{0}: commit: Update shell logs - 2024-07-10 20:16:58
+fd8731f4 HEAD@{1}: commit: Update shell logs - 2024-07-10 20:16:57
+0ef75c87 HEAD@{2}: reset: moving to HEAD~8
+2be9530b HEAD@{3}: reset: moving to HEAD~4
+4d3b677b HEAD@{4}: reset: moving to HEAD
+4d3b677b HEAD@{5}: commit: Update shell logs - 2024-07-10 20:06:57
+056ec1c2 HEAD@{6}: commit: Update shell logs - 2024-07-10 19:38:18
+e85d0c88 HEAD@{7}: commit: Working version of load_vec_db.py for Slack and bot.py for Streamlit app
+dc0d183f HEAD@{8}: commit: First commit for RAG system
+2be9530b HEAD@{9}: commit: Update shell logs - 2024-07-10 12:16:05
+a3f7bd47 HEAD@{10}: commit: Update shell logs - 2024-07-10 11:28:38
+5e98d90a HEAD@{11}: commit: Update shell logs - 2024-07-10 01:29:55
+f7d4bf74 HEAD@{12}: commit: Update shell logs - 2024-07-10 01:07:43
+01d7a4d6 HEAD@{13}: commit: Update shell logs - 2024-07-10 01:06:39
+45b94396 HEAD@{14}: commit: Update shell logs - 2024-07-09 16:00:20
+23e688cf HEAD@{15}: commit: Update shell logs - 2024-07-09 15:59:58
+f3bbfbb9 HEAD@{16}: commit: Update shell logs - 2024-07-09 15:47:25
+0ef75c87 HEAD@{17}: commit: Update shell logs - 2024-07-09 13:28:17
+1bb76260 HEAD@{18}: commit: Update shell logs - 2024-07-09 13:22:22
+d416bcdb HEAD@{19}: commit: Update shell logs - 2024-07-09 13:21:07
+aeb1f9fb HEAD@{20}: commit: Update shell logs - 2024-07-09 13:19:26
+74c53b06 HEAD@{21}: commit: Update shell logs - 2024-07-09 13:03:52
+70af4fde HEAD@{22}: commit: Update shell logs - 2024-07-09 11:56:39
+d3bf05ef HEAD@{23}: commit: Update shell logs - 2024-07-09 11:08:09
+1e3074be HEAD@{24}: commit: Update shell logs - 2024-07-08 14:04:07
+cebe206c HEAD@{25}: commit: Update shell logs - 2024-07-08 14:03:01
+958d5556 HEAD@{26}: commit: Update shell logs - 2024-07-08 14:02:59
+1ecc72c5 HEAD@{27}: commit: Update shell logs - 2024-07-04 19:14:03
+50d8f508 HEAD@{28}: commit: Update shell logs - 2024-07-01 11:11:55
+eca77daf HEAD@{29}: reset: moving to HEAD
+eca77daf HEAD@{30}: commit: Update shell logs - 2024-06-30 20:23:46
+46098041 HEAD@{31}: commit: Update shell logs - 2024-06-24 18:05:31
+:
+2be9530b HEAD@{3}: reset: moving to HEAD~4
+4d3b677b HEAD@{4}: reset: moving to HEAD
+4d3b677b HEAD@{5}: commit: Update shell logs - 2024-07-10 20:06:57
+056ec1c2 HEAD@{6}: commit: Update shell logs - 2024-07-10 19:38:18
+e85d0c88 HEAD@{7}: commit: Working version of load_vec_db.py for Slack and bot.py for Streamlit app
+dc0d183f HEAD@{8}: commit: First commit for RAG system
+2be9530b HEAD@{9}: commit: Update shell logs - 2024-07-10 12:16:05
+a3f7bd47 HEAD@{10}: commit: Update shell logs - 2024-07-10 11:28:38
+5e98d90a HEAD@{11}: commit: Update shell logs - 2024-07-10 01:29:55
+f7d4bf74 HEAD@{12}: commit: Update shell logs - 2024-07-10 01:07:43
+01d7a4d6 HEAD@{13}: commit: Update shell logs - 2024-07-10 01:06:39
+45b94396 HEAD@{14}: commit: Update shell logs - 2024-07-09 16:00:20
+23e688cf HEAD@{15}: commit: Update shell logs - 2024-07-09 15:59:58
+f3bbfbb9 HEAD@{16}: commit: Update shell logs - 2024-07-09 15:47:25
+:
+2be9530b HEAD@{3}: reset: moving to HEAD~4
+4d3b677b HEAD@{4}: reset: moving to HEAD
+4d3b677b HEAD@{5}: commit: Update shell logs - 2024-07-10 20:06:57
+056ec1c2 HEAD@{6}: commit: Update shell logs - 2024-07-10 19:38:18
+e85d0c88 HEAD@{7}: commit: Working version of load_vec_db.py for Slack and bot.py for Streamlit app
+dc0d183f HEAD@{8}: commit: First commit for RAG system
+2be9530b HEAD@{9}: commit: Update shell logs - 2024-07-10 12:16:05
+a3f7bd47 HEAD@{10}: commit: Update shell logs - 2024-07-10 11:28:38
+5e98d90a HEAD@{11}: commit: Update shell logs - 2024-07-10 01:29:55
+f7d4bf74 HEAD@{12}: commit: Update shell logs - 2024-07-10 01:07:43
+01d7a4d6 HEAD@{13}: commit: Update shell logs - 2024-07-10 01:06:39
+45b94396 HEAD@{14}: commit: Update shell logs - 2024-07-09 16:00:20
+23e688cf HEAD@{15}: commit: Update shell logs - 2024-07-09 15:59:58
+f3bbfbb9 HEAD@{16}: commit: Update shell logs - 2024-07-09 15:47:25
+0ef75c87 HEAD@{17}: commit: Update shell logs - 2024-07-09 13:28:17
+1bb76260 HEAD@{18}: commit: Update shell logs - 2024-07-09 13:22:22
+d416bcdb HEAD@{19}: commit: Update shell logs - 2024-07-09 13:21:07
+aeb1f9fb HEAD@{20}: commit: Update shell logs - 2024-07-09 13:19:26
+74c53b06 HEAD@{21}: commit: Update shell logs - 2024-07-09 13:03:52
+70af4fde HEAD@{22}: commit: Update shell logs - 2024-07-09 11:56:39
+d3bf05ef HEAD@{23}: commit: Update shell logs - 2024-07-09 11:08:09
+1e3074be HEAD@{24}: commit: Update shell logs - 2024-07-08 14:04:07
+cebe206c HEAD@{25}: commit: Update shell logs - 2024-07-08 14:03:01
+958d5556 HEAD@{26}: commit: Update shell logs - 2024-07-08 14:02:59
+1ecc72c5 HEAD@{27}: commit: Update shell logs - 2024-07-04 19:14:03
+50d8f508 HEAD@{28}: commit: Update shell logs - 2024-07-01 11:11:55
+eca77daf HEAD@{29}: reset: moving to HEAD
+eca77daf HEAD@{30}: commit: Update shell logs - 2024-06-30 20:23:46
+46098041 HEAD@{31}: commit: Update shell logs - 2024-06-24 18:05:31
+2be9530b HEAD@{3}: reset: moving to HEAD~4
+4d3b677b HEAD@{4}: reset: moving to HEAD
+4d3b677b HEAD@{5}: commit: Update shell logs - 2024-07-10 20:06:57
+056ec1c2 HEAD@{6}: commit: Update shell logs - 2024-07-10 19:38:18
+e85d0c88 HEAD@{7}: commit: Working version of load_vec_db.py for Slack and bot.py for Streamlit app
+dc0d183f HEAD@{8}: commit: First commit for RAG system
+2be9530b HEAD@{9}: commit: Update shell logs - 2024-07-10 12:16:05
+a3f7bd47 HEAD@{10}: commit: Update shell logs - 2024-07-10 11:28:38
+5e98d90a HEAD@{11}: commit: Update shell logs - 2024-07-10 01:29:55
+f7d4bf74 HEAD@{12}: commit: Update shell logs - 2024-07-10 01:07:43
+01d7a4d6 HEAD@{13}: commit: Update shell logs - 2024-07-10 01:06:39
+45b94396 HEAD@{14}: commit: Update shell logs - 2024-07-09 16:00:20
+23e688cf HEAD@{15}: commit: Update shell logs - 2024-07-09 15:59:58
+f3bbfbb9 HEAD@{16}: commit: Update shell logs - 2024-07-09 15:47:25
+0ef75c87 HEAD@{17}: commit: Update shell logs - 2024-07-09 13:28:17
+1bb76260 HEAD@{18}: commit: Update shell logs - 2024-07-09 13:22:22
+d416bcdb HEAD@{19}: commit: Update shell logs - 2024-07-09 13:21:07
+aeb1f9fb HEAD@{20}: commit: Update shell logs - 2024-07-09 13:19:26
+74c53b06 HEAD@{21}: commit: Update shell logs - 2024-07-09 13:03:52
+70af4fde HEAD@{22}: commit: Update shell logs - 2024-07-09 11:56:39
+d3bf05ef HEAD@{23}: commit: Update shell logs - 2024-07-09 11:08:09
+1e3074be HEAD@{24}: commit: Update shell logs - 2024-07-08 14:04:07
+cebe206c HEAD@{25}: commit: Update shell logs - 2024-07-08 14:03:01
+958d5556 HEAD@{26}: commit: Update shell logs - 2024-07-08 14:02:59
+1ecc72c5 HEAD@{27}: commit: Update shell logs - 2024-07-04 19:14:03
+50d8f508 HEAD@{28}: commit: Update shell logs - 2024-07-01 11:11:55
+eca77daf HEAD@{29}: reset: moving to HEAD
+eca77daf HEAD@{30}: commit: Update shell logs - 2024-06-30 20:23:46
+46098041 HEAD@{31}: commit: Update shell logs - 2024-06-24 18:05:31
+70066d63 HEAD@{32}: commit: Update shell logs - 2024-06-22 22:20:15
+5fa6697d HEAD@{33}: commit: Update shell logs - 2024-06-22 22:19:12
+91051d74 HEAD@{34}: commit: Update shell logs - 2024-06-22 22:18:43
+fd82d1a2 HEAD@{35}: commit: Update shell logs - 2024-06-22 22:14:17
+afb2334b HEAD@{36}: commit: Update shell logs - 2024-06-22 22:13:26
+45c4615d HEAD@{37}: commit: Update shell logs - 2024-06-22 22:13:23
+348bfa3f HEAD@{38}: commit: Update shell logs - 2024-06-22 22:10:44
+b48d1fba HEAD@{39}: commit: Update shell logs - 2024-06-22 22:10:23
+dbba0baf HEAD@{40}: commit (merge): Update shell logs - 2024-06-22 22:10:21
+bbb28c74 HEAD@{41}: commit: Update shell logs - 2024-06-14 12:52:18
+e43db442 HEAD@{42}: commit: Update shell logs - 2024-06-14 12:51:15
+801997c8 HEAD@{43}: commit: Update shell logs - 2024-06-12 18:22:20
+c73551f6 HEAD@{44}: commit: Update shell logs - 2024-06-12 18:18:29
+7ffd0d70 HEAD@{45}: commit: Update shell logs - 2024-06-12 12:11:45
+549b4081 HEAD@{46}: commit: Finalize shell logs - 2024-06-12 12:11:43
+2381aaf6 HEAD@{47}: commit: Update shell logs - 2024-06-12 12:11:43
+cb4c2181 HEAD@{48}: commit: Update shell logs - 2024-06-12 12:11:41
+9c5a6e40 HEAD@{49}: commit: Finalize shell logs - 2024-06-12 12:11:39
+4019cc67 HEAD@{50}: commit: Update shell logs - 2024-06-12 12:11:39
+08982538 HEAD@{51}: commit: Test commit for post-commit hook
+0afb2339 HEAD@{52}: commit: Update shell logs - 2024-06-12 12:09:27
+66363ee7 HEAD@{53}: commit: Update shell logs - 2024-06-12 12:09:27
+75b13cef HEAD@{54}: commit: Test commit for post-commit hook
+c5edd4e7 HEAD@{55}: commit: Testing commit script
+c56a04d5 HEAD@{56}: commit: Update shell logs - 2024-06-12 12:02:24
+a6f91b2d HEAD@{57}: commit: Update shell logs - 2024-06-12 12:02:23
+e083269f HEAD@{58}: commit: Update shell logs - 2024-06-12 12:02:20
+a4075dc9 HEAD@{59}: commit: Update shell logs - 2024-06-12 12:02:19
+7a53020b HEAD@{60}: commit: Testing commit script. Added debug statements
+41688167 HEAD@{61}: commit: Testing commit script
+7387e19f HEAD@{62}: commit: Committed logs to test commit script
+6ba674a4 HEAD@{63}: commit: Update shell logs - 2024-06-12 11:43:10
+87fc48ce HEAD@{64}: commit: Update shell logs - 2024-06-12 11:43:10
+9cf6b16d HEAD@{65}: commit: Update shell logs - 2024-06-12 11:41:09
+f9677c5b HEAD@{66}: commit: Update shell logs - 2024-06-12 11:40:18
+7e1b6f58 HEAD@{67}: commit: Update shell logs - 2024-06-12 11:39:56
+c2a61964 HEAD@{68}: commit: Update shell logs - 2024-06-11 19:23:36
+adc441a3 HEAD@{69}: commit: Testing shell log commits
+2ed2deff HEAD@{70}: commit: Update shell logs - 2024-06-11 19:20:58
+54dd81ca HEAD@{71}: commit: Update shell logs - 2024-06-11 19:20:21
+90ab421e HEAD@{72}: commit: Update shell logs - 2024-06-11 19:19:48
+722fa0af HEAD@{73}: commit: Update shell logs - 2024-06-11 19:19:33
+57327551 HEAD@{74}: commit: Update shell logs - 2024-06-11 19:17:32
+a31e13de HEAD@{75}: commit: Update shell logs - 2024-06-11 19:16:57
+fb54851b HEAD@{76}: commit: Update shell logs - 2024-06-11 19:16:33
+3b86fa98 HEAD@{77}: commit: Update shell logs - 2024-06-11 19:15:07
+fd1179ab HEAD@{78}: commit: Update shell logs - 2024-06-10 22:31:44
+a7787da0 HEAD@{79}: commit: Update shell logs - 2024-06-10 22:31:44
+2fbeaff2 HEAD@{80}: commit: Test commit for shell logs
+e6327298 HEAD@{81}: commit: Test commit for shell logs
+3cf9261e HEAD@{82}: commit: Testing post-commit hook with capture_logs.ps1 in scripts
+471aaf1e HEAD@{83}: reset: moving to HEAD
+471aaf1e HEAD@{84}: commit: Update shell logs - 2024-06-10 21:21:19
+cf4a1566 HEAD@{85}: commit: Update shell logs - 2024-06-10 21:20:39
+897333c3 HEAD@{86}: commit: Update shell logs - 2024-06-10 20:33:00
+f1e36a05 HEAD@{87}: reset: moving to HEAD^1
+350f5799 HEAD@{88}: commit: Update shell logs - 2024-06-10 20:26:03
+f1e36a05 HEAD@{89}: commit: Update shell logs - 2024-06-10 20:25:25
+PS C:\dev\diamond_jack> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\dev\diamond_jack> git reset --hard e85d0c88
+Unlink of file 'logs/shell_logs_20240710_201655.txt' failed. Should I try again? (y/n) n
+warning: unable to unlink 'logs/shell_logs_20240710_201655.txt': Invalid argument
+Updating files: 100% (114/114), done.
+HEAD is now at e85d0c88 Working version of load_vec_db.py for Slack and bot.py for Streamlit app
