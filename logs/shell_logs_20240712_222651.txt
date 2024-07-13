@@ -1,0 +1,61 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240712222651
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\thelo\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+Process ID: 11684
+PSVersion: 5.1.22621.3880
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.3880
+BuildVersion: 10.0.22621.3880
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240712_222651.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location
+--     ----            -------------   -----         -----------     --------
+1      PowerShell.E...                 NotStarted    False
+Shell session setup complete for session 20240712_222651
+
+
+PS>try { . "c:\Users\thelo\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+]633;A]633;P;Cwd=C:\x5cdevPS C:\dev> ]633;P;Prompt=PS C:\x5cdev> ]633;B
+PS>cd diamond_jack/rag_system/chroma-viewer
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_system\x5cchroma-viewerPS C:\dev\diamond_jack\rag_system\chroma-viewer> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system\x5cchroma-viewer> ]633;B
+PS>cd chroma-viewer
+]633;D;0]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_system\x5cchroma-viewer\x5cchroma-viewerPS C:\dev\diamond_jack\rag_system\chroma-viewer\chroma-viewer> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system\x5cchroma-viewer\x5cchroma-viewer> ]633;B
+PS>streamlit run viewer.py C:\dev\diamond_jack\rag_system\slack_db\chroma.sqlite3
+
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+]633;D;1]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_system\x5cchroma-viewer\x5cchroma-viewerPS C:\dev\diamond_jack\rag_system\chroma-viewer\chroma-viewer> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system\x5cchroma-viewer\x5cchroma-viewer> ]633;B
+PS>streamlit run viewer.py C:\dev\diamond_jack\rag_system\slack_db
+
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+]633;D;1]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_system\x5cchroma-viewer\x5cchroma-viewerPS C:\dev\diamond_jack\rag_system\chroma-viewer\chroma-viewer> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system\x5cchroma-viewer\x5cchroma-viewer> ]633;B
+PS>streamlit run viewer.py C:\dev\diamond_jack\rag_system\slack_db\9cbbc622-a2c3-4c9d-87f8-ae954b0ad9c8
+
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+]633;D;1]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_system\x5cchroma-viewer\x5cchroma-viewerPS C:\dev\diamond_jack\rag_system\chroma-viewer\chroma-viewer> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system\x5cchroma-viewer\x5cchroma-viewer> ]633;B
+PS>streamlit run viewer.py C:\dev\diamond_jack\rag_system\slack_db\9cbbc622-a2c3-4c9d-87f8-ae954b0ad9c8\data_level0.bin
+
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+]633;D;1]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_system\x5cchroma-viewer\x5cchroma-viewerPS C:\dev\diamond_jack\rag_system\chroma-viewer\chroma-viewer> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system\x5cchroma-viewer\x5cchroma-viewer> ]633;B
+PS>streamlit run viewer.py C:\dev\diamond_jack\rag_system\slack_db\9cbbc622-a2c3-4c9d-87f8-ae954b0ad9c8\chroma.sqlite3
+
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+]633;D;1]633;A]633;P;Cwd=C:\x5cdev\x5cdiamond_jack\x5crag_system\x5cchroma-viewer\x5cchroma-viewerPS C:\dev\diamond_jack\rag_system\chroma-viewer\chroma-viewer> ]633;P;Prompt=PS C:\x5cdev\x5cdiamond_jack\x5crag_system\x5cchroma-viewer\x5cchroma-viewer> ]633;B

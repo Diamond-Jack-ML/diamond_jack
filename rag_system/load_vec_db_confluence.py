@@ -16,7 +16,7 @@ confluence_docs = AthenaLoader(
     database="confluence",
     s3_output_uri="s3://diamondjack/confluence_query_results/",
     profile_name="datasharing",
-    metadata_columns=["page_id", "page_title", "page_created"]
+    metadata_columns=["page_id", "page_title", "page_created", "page_content", "page_details"]
 ).load()
 
 # Combine all documents

@@ -1,0 +1,35 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240712201428
+Username: LAPTOP-KI0CU6PN\thelo
+RunAs User: LAPTOP-KI0CU6PN\thelo
+Configuration Name: 
+Machine: LAPTOP-KI0CU6PN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 11784
+PSVersion: 5.1.22621.3880
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.3880
+BuildVersion: 10.0.22621.3880
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\dev\diamond_jack\logs\shell_logs_20240712_201428.txt
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                ...
+Shell session setup complete for session 20240712_201428
+
+
+PS C:\dev> cd diamond_jack
+PS C:\dev\diamond_jack> git reset --hard 1da2bd66f0e736579dbd85902b41f3773ec7c2f9
+fatal: Unable to create 'C:/dev/diamond_jack/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
