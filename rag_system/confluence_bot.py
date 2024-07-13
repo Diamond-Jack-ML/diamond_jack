@@ -6,6 +6,8 @@ from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
 import streamlit as st
 import os
+import sqlite3
+import json
 
 # Ensure the OpenAI API key is set
 openai_api_key = os.getenv('OPENAI_API_KEY')
@@ -24,13 +26,33 @@ Answer:
 prompt = ChatPromptTemplate.from_template(template)
 llm = ChatOpenAI(model="gpt-4-0125-preview")
 
+# Function to get Confluence page content from SQLite database
+def get_confluence_pages():
+    conn = sqlite3.connect('./confluence_db/chroma.sqlite3')
+    cursor = conn.cursor()
+    cursor.execute("SELECT metadata FROM embeddings_queue")
+    rows = cursor.fetchall()
+    conn.close()
+    
+    # Extract page content assuming 'page_content' is the correct key
+    return [json.loads(row[0])['page_title'] + ": " + json.loads(row[0]).get('page_content', '') for row in rows]
 
 # Function to get answer
 def get_answer(question):
-    db = Chroma(persist_directory="./confluence_db", embedding_function=OpenAIEmbeddings(openai_api_key=os.getenv('OPENAI_API_KEY')))
-    inputs = {"page_content": db.as_retriever(), "question": RunnablePassthrough()}
-    rag_chain = (inputs | prompt | llm | StrOutputParser())
-    return rag_chain.invoke(question)
+    db = Chroma(persist_directory="./confluence_db", embedding_function=OpenAIEmbeddings(openai_api_key=openai_api_key))
+    retriever = db.as_retriever()
+    pages = get_confluence_pages()
+    
+    # Prepare the page content as a single string
+    page_content = "\n\n".join(pages)
+    
+    # Prepare inputs for the RAG chain
+    inputs = {"page_content": page_content, "question": question}
+    rag_chain = (prompt | llm | StrOutputParser())
+    
+    # Fetch the answer using the RAG chain
+    answer = rag_chain.invoke(inputs)
+    return answer
 
 # Streamlit UI
 st.title("Confluence - Q&A Bot")
