@@ -9,6 +9,7 @@ import os
 
 # Ensure the OpenAI API key is set
 openai_api_key = os.getenv('OPENAI_API_KEY')
+print(openai_api_key)
 
 # Declare the foundational model and prompt template
 template = """
