@@ -27,15 +27,20 @@ prompt = ChatPromptTemplate.from_template(template)
 llm = ChatOpenAI(model="gpt-4-0125-preview")
 
 # Function to get Confluence page content from SQLite database
-def get_confluence_pages():
+def get_confluence_pages(limit=10):
     conn = sqlite3.connect('./confluence_db/chroma.sqlite3')
     cursor = conn.cursor()
-    cursor.execute("SELECT metadata FROM embeddings_queue")
+    cursor.execute("SELECT metadata FROM embeddings_queue LIMIT ?", (limit,))
     rows = cursor.fetchall()
     conn.close()
     
     # Extract page content assuming 'page_content' is the correct key
-    return [json.loads(row[0])['page_title'] + ": " + json.loads(row[0]).get('page_content', '') for row in rows]
+    pages = [json.loads(row[0])['page_title'] + ": " + json.loads(row[0]).get('page_content', '') for row in rows]
+    
+    # Truncate each page content to ensure it's not too long
+    max_length = 1000  # adjust this value as needed
+    truncated_pages = [page[:max_length] for page in pages]
+    return truncated_pages
 
 # Function to get answer
 def get_answer(question):
